@@ -1,21 +1,54 @@
 * {
-  box-sizing: border-box;
+
+  .encabezado section {
+    width: 20%;
+    display:flex:
+    flex-wrap:wrap;
+  }
+box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 .encabezado header{
-  background-color: white;
-  padding:10px;
+  width: 100%;
   display: flex;
+  border: solid 1px red;
   align-items: center;
-  color: red;
-  border: 5px red solid;
-  justify-content: space-between;;
+  margin: auto;
+  text-align: center;
+  background-color: red;
+
+
 }
 .encabezado ul{
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Fjalla One', sans-serif;
+
+
 }
 a {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 50px;
   display: block;
+  align-items: center;
+
+}
+
+.contenedor-encabezado{
+
+  width: 100px;
+  list-style: none;
+
+}
+header section {
+  width: 50%;
+}
+.logo {
+  background-color: white;
+  border-radius: 20px;
+  border: solid 1px white
 }
