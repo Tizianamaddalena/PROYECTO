@@ -41,17 +41,11 @@ margin-top:-115px;
   flex-wrap: wrap;
   width: 100%;
   background-color: red;
-  justify-content: center;
-  
-}
-section #seguinos{
-  width: 33%;
-  left:30px
-}
-section #nosotos{
-width: 33%;
-}
-section #infomracion{
-width: 33%;
+  justify-content: space-between;
+  font-family: 'Fjalla One', sans-serif;
 
+}
+
+.thdb {
+width: 50px;
 }
