@@ -24,7 +24,7 @@ font-size: 25px;
 
 .main-nav ul {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 .main-nav ul li{
 list-style: none;
@@ -41,7 +41,7 @@ margin-top:-115px;
   flex-wrap: wrap;
   width: 100%;
   background-color: red;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: 'Fjalla One', sans-serif;
 
 }
