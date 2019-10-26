@@ -17,6 +17,7 @@ box-sizing: border-box;
   margin: auto;
   text-align: center;
   background-color: red;
+  height: 200px;
 
 
 }
@@ -26,15 +27,6 @@ box-sizing: border-box;
   flex-wrap: wrap;
   font-family: 'Fjalla One', sans-serif;
 
-
-}
-a {
-  color: white;
-  text-align: center;
-  padding: 50px 0;
-  font-size: 50px;
-  display: block;
-  align-items: center;
 
 }
 
@@ -47,8 +39,9 @@ a {
 header section {
   width: 50%;
 }
+
 .logo {
   background-color: white;
   border-radius: 20px;
-  border: solid 1px white
+  border: solid 1px white;
 }
