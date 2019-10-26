@@ -43,7 +43,12 @@ margin-top:-115px;
   background-color: red;
   justify-content: space-around;
   font-family: 'Fjalla One', sans-serif;
-
+}
+#seguinos {
+  text-align: center;
+}
+#nosotros {
+  text-align: center;
 }
 
 .thdb {
