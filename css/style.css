@@ -66,6 +66,7 @@ margin-top:-115px;
   background-color: red;
   justify-content: space-around;
   font-family: 'Fjalla One', sans-serif;
+  color: black;
 }
 #seguinos {
   text-align: center;
@@ -93,6 +94,10 @@ width: 50px;
 .buscador {
     width: 50%;
     margin: 50px auto;
+}
+ #redes{
+  color: white;
+  width: 100px;
 }
 
 /* Bootstrap 4 text input with search icon */
