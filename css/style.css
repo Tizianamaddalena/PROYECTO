@@ -45,6 +45,14 @@ justify-content: space-around;
 list-style: none;
 text-align: center;
 }
+#opciones:hover {
+  color: white;
+  border: outset 2px white;
+  text-decoration: none;
+  padding: 3px;
+
+}
+
 .logo {
   width:200px;
 }
@@ -64,6 +72,19 @@ margin-top:-115px;
 }
 #nosotros {
   text-align: center;
+}
+#informacion {
+  text-align: center;
+}
+.footer-details {
+  list-style: none;
+}
+.footer-hipervinculo {
+  color: black;
+}
+.footer-hipervinculo:hover{
+  color: white;
+  text-decoration: none
 }
 
 .thdb {
@@ -90,4 +111,16 @@ width: 50px;
     text-align: center;
     pointer-events: none;
     color: #aaa;
+}
+/* MEDIA QUERIES CEL - TABLET - SMARTPHONE */
+
+@media (max-width: 850px) {
+  }
+
+@media (min-width:451px) and (max-width:750px) {
+
+}
+
+@media  only screen and (max-width:450px){
+
 }
