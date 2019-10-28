@@ -3,15 +3,10 @@
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
 .container {
 width:100%;
 align-items: center;
 margin: auto;
-border: red solid 1px;
 }
 
 .main-header {
@@ -31,10 +26,28 @@ font-size: 25px;
 display: flex;
 justify-content: space-around;
 }
+
+.main-header header{
+  background-color: white;
+  padding:10px;
+  display: flex;
+  align-items: center;
+  color: red;
+  border: 5px red solid;
+  justify-content: space-between;
+}
 .main-nav ul li{
 list-style: none;
 text-align: center;
 }
+#opciones:hover {
+  color: white;
+  border: outset 2px white;
+  text-decoration: none;
+  padding: 3px;
+
+}
+
 .logo {
   width:200px;
 }
@@ -48,6 +61,7 @@ margin-top:-115px;
   background-color: red;
   justify-content: space-around;
   font-family: 'Fjalla One', sans-serif;
+  color: black;
 }
 #seguinos {
   text-align: center;
@@ -55,7 +69,59 @@ margin-top:-115px;
 #nosotros {
   text-align: center;
 }
+#informacion {
+  text-align: center;
+}
+.footer-details {
+  list-style: none;
+}
+.footer-hipervinculo {
+  color: black;
+}
+.footer-hipervinculo:hover{
+  color: white;
+  text-decoration: none
+}
 
 .thdb {
 width: 50px;
+}
+.buscador {
+    width: 50%;
+    margin: 50px auto;
+
+}
+ #redes{
+  color: white;
+  width: 100px;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+/* MEDIA QUERIES CEL - TABLET - SMARTPHONE */
+
+@media (max-width: 850px) {
+  }
+
+@media (min-width:451px) and (max-width:750px) {
+
+}
+
+@media  only screen and (max-width:450px){
+
 }
