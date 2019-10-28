@@ -11,7 +11,7 @@ margin: auto;
 
 .main-header {
   text-align: center;
-  background-color: red;
+  background-color: #dc3545;
   height:200px;
 }
 
@@ -87,10 +87,14 @@ margin-top:-115px;
 width: 50px;
 }
 .buscador {
-    width: 50%;
+    width: 70%;
     margin: 50px auto;
-
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
  #redes{
   color: white;
   width: 100px;
@@ -99,6 +103,7 @@ width: 50px;
 
 .has-search .form-control {
     padding-left: 2.375rem;
+    width: 200%;
 }
 
 .has-search .form-control-feedback {
@@ -112,6 +117,7 @@ width: 50px;
     pointer-events: none;
     color: #aaa;
 }
+
 
 
 /* MEDIA QUERIES CEL - TABLET - SMARTPHONE */
