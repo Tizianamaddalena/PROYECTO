@@ -112,6 +112,7 @@ width: 50px;
     pointer-events: none;
     color: #aaa;
 }
+
 /* MEDIA QUERIES CEL - TABLET - SMARTPHONE */
 
 @media (max-width: 850px) {
