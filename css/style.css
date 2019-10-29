@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+
+
 .container {
 width:100%;
 align-items: center;
@@ -11,12 +13,16 @@ margin: auto;
 
 .main-header {
   text-align: center;
-  background-color: #dc3545;
+  background-color:black;
+  opacity: 0.9;
   height:200px;
+  width: 100%;
 }
-
+.cuerpo {
+  background-image: url(../img/pochoclo.JPG);
+}
 .main-nav a {
-color: black;
+color:  #dc3545;
 text-decoration: none;
 font-family: 'Fjalla One', sans-serif;
 font-size: 25px;
@@ -24,16 +30,13 @@ font-size: 25px;
 
 .main-nav ul {
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 }
 
 .main-header header{
-  background-color: white;
   padding:10px;
   display: flex;
   align-items: center;
-  color: red;
-  border: 5px red solid;
   justify-content: space-between;
 }
 .main-nav ul li{
@@ -42,9 +45,10 @@ text-align: center;
 }
 #opciones:hover {
   color: white;
-  border: outset 2px white;
+  border: outset 2px #dc3545;
   text-decoration: none;
   padding: 3px;
+  background-color: #dc3545
 
 }
 
@@ -58,10 +62,11 @@ margin-top:-115px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background-color: red;
+  background-color: black;
+  opacity: 0.9;
   justify-content: space-around;
   font-family: 'Fjalla One', sans-serif;
-  color: black;
+  color: #dc3545;
 }
 #seguinos {
   text-align: center;
@@ -76,7 +81,7 @@ margin-top:-115px;
   list-style: none;
 }
 .footer-hipervinculo {
-  color: black;
+  color: #dc3545;
 }
 .footer-hipervinculo:hover{
   color: white;
@@ -93,6 +98,10 @@ width: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+#carouselExampleControls {
+  width: 30%;
+
 }
 
  #redes{
