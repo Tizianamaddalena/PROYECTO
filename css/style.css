@@ -21,6 +21,11 @@ margin: auto;
 .cuerpo {
   background-image: url(../img/pochoclo.JPG);
 }
+.logo:hover{
+  -webkit-transform:scale(0.9);transform:scale(0.9);
+}
+.efecto-imagen { overflow: hidden;}
+
 .main-nav a {
 color:  #dc3545;
 text-decoration: none;
