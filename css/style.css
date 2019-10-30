@@ -4,7 +4,6 @@
 }
 
 
-
 .container {
 width:100%;
 align-items: center;
@@ -21,6 +20,7 @@ margin: auto;
 .cuerpo {
   background-image: url(../img/pochoclo.JPG);
 }
+
 .logo:hover{
   -webkit-transform:scale(0.9);transform:scale(0.9);
 }
