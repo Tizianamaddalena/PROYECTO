@@ -15,9 +15,9 @@ margin: auto;
   background-color:black;
   opacity: 0.9;
   height:200px;
-  
+
 }
-.cuerpo {
+body {
   background-image: url(../img/pochoclo.JPG);
 }
 
