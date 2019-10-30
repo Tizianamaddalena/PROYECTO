@@ -132,7 +132,15 @@ width: 50px;
     color: #aaa;
 }
 
-
+#top {
+  background-color: black;
+  font-family: Fjalla One;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+}
 
 /* MEDIA QUERIES CEL - TABLET - SMARTPHONE */
 
