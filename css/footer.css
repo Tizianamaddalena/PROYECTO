@@ -26,12 +26,10 @@ h1 {
 }
 
 
-.footer-details {
-  list-style: none;
-}
 .footer-hipervinculo {
   color: #dc3545;
 }
+
 .footer-hipervinculo:hover{
   color: white;
   text-decoration: none
@@ -44,3 +42,9 @@ width: 50px;
 #redes{
  color: white;
  width: 100px;
+}
+
+#redes:hover{
+  font-size: 30px;
+  color: #dc3545;
+}
