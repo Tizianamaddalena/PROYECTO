@@ -48,7 +48,7 @@ justify-content: space-between;
 list-style: none;
 text-align: center;
 }
-#opciones:hover {
+.opciones:hover {
   color: white;
   border: outset 2px #dc3545;
   text-decoration: none;
@@ -80,7 +80,7 @@ margin-top:-115px;
   background-color: black;
   opacity: 0.9;
   width: 80%;
-  
+
 
 }
 
