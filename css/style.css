@@ -3,7 +3,10 @@
   padding: 0;
 }
 
-
+body {
+  background-image: url(../img/pochoclo.JPG);
+}
+/*  INICIO HEADER */
 .container {
 width:100%;
 align-items: center;
@@ -16,9 +19,6 @@ margin: auto;
   opacity: 0.9;
   height:200px;
 
-}
-body {
-  background-image: url(../img/pochoclo.JPG);
 }
 
 .logo:hover{
@@ -63,6 +63,8 @@ text-align: center;
 nav {
 margin-top:-115px;
 }
+/*  FIN HEADER */
+/*  INICIO FOOTER */
 .main-footer {
   display: flex;
   flex-wrap: wrap;
@@ -96,6 +98,8 @@ margin-top:-115px;
 .thdb {
 width: 50px;
 }
+/* FIN FOOTER */
+
 .buscador {
     width: 70%;
     margin: 50px auto;
@@ -142,7 +146,7 @@ width: 50px;
   margin-left: 10px;
 }
 
-/* MEDIA QUERIES CEL - TABLET - SMARTPHONE */
+/* INICIO MEDIA QUERIES CEL - TABLET - SMARTPHONE */
 
 @media (max-width: 850px) {
   }
@@ -154,3 +158,4 @@ width: 50px;
 @media  only screen and (max-width:450px){
 
 }
+/* FIN MEDIA QUERIES CEL - TABLET - SMARTPHONE */
