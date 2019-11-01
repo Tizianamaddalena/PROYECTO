@@ -1,0 +1,36 @@
+.main-header {
+  text-align: center;
+  background-color:black;
+  opacity: 0.9;
+  height:200px;
+}
+.main-nav ul {
+display: flex;
+justify-content: space-around;
+width: 50%;
+}
+.main-nav ul li{
+list-style: none;
+}
+.main-nav a {
+color:  #dc3545;
+text-decoration: none;
+font-family: 'Fjalla One', sans-serif;
+font-size: 25px;
+}
+
+.opciones:hover {
+  color: white;
+  border: outset 2px #dc3545;
+  text-decoration: none;
+  padding: 3px;
+  background-color: #dc3545
+}
+
+.logo {width:200px;}
+.logo:hover{-webkit-transform:scale(0.9);transform:scale(0.9);}
+.efecto-imagen {overflow: hidden;}
+
+nav {
+margin-top:-115px;
+}

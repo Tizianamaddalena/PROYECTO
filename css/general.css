@@ -1,0 +1,30 @@
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/pochoclo.JPG);
+}
+
+
+.contenedor-body {
+  background-color: black;
+  opacity: 0.9;
+  width: 80%;
+}
+
+
+/* INICIO MEDIA QUERIES CEL - TABLET - SMARTPHONE */
+
+@media (max-width: 850px) {
+  }
+
+@media (min-width:451px) and (max-width:750px) {
+
+}
+
+@media  only screen and (max-width:450px){
+
+}
+/* FIN MEDIA QUERIES CEL - TABLET - SMARTPHONE */

@@ -1,0 +1,37 @@
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+  justify-content: space-around;
+  font-family: 'Fjalla One', sans-serif;
+  color: #dc3545;
+}
+#seguinos {
+  text-align: center;
+}
+#nosotros {
+  text-align: center;
+}
+#informacion {
+  text-align: center;
+}
+.footer-details {
+  list-style: none;
+}
+.footer-hipervinculo {
+  color: #dc3545;
+}
+.footer-hipervinculo:hover{
+  color: white;
+  text-decoration: none
+}
+
+.thdb {
+width: 50px;
+}
+
+#redes{
+ color: white;
+ width: 100px;
