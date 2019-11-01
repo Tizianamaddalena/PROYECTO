@@ -64,6 +64,13 @@ nav {
 margin-top:-115px;
 }
 /*  FIN HEADER */
+.carousel1 h1{
+  color:  #dc3545;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 25px;
+}
+
 /*  INICIO FOOTER */
 .main-footer {
   display: flex;
