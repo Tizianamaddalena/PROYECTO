@@ -1,4 +1,4 @@
-.main-footer {
+footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -11,12 +11,21 @@
 #seguinos {
   text-align: center;
 }
+
 #nosotros {
   text-align: center;
 }
+
 #informacion {
   text-align: center;
 }
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  color: #dc3545;
+}
+
+
 .footer-details {
   list-style: none;
 }
