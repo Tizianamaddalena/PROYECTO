@@ -14,11 +14,6 @@ body {
   opacity: 0.9;
   height:200px;
 }
-.logo:hover{
-  -webkit-transform:scale(0.9);transform:scale(0.9);
-}
-
-.efecto-imagen { overflow: hidden;}
 
 .main-nav a {
 color:  #dc3545;
@@ -57,6 +52,11 @@ text-align: center;
 nav {
 margin-top:-115px;
 }
+
+.logo:hover{
+  -webkit-transform:scale(0.9);transform:scale(0.9);
+}
+.efecto-imagen { overflow: hidden;}
 /*  FIN HEADER */
 .carousel1 li{
   color: white;
