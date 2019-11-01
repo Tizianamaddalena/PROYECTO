@@ -17,6 +17,7 @@ body {
 .logo:hover{
   -webkit-transform:scale(0.9);transform:scale(0.9);
 }
+
 .efecto-imagen { overflow: hidden;}
 
 .main-nav a {
