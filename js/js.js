@@ -6,18 +6,13 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key="+api_key+"&language=en-U
  return response.json()
 })
 .then(function(information) {
+  var posterURL = "https://image.tmdb.org/t/p/original"
+
 console.log(information.results);
   for (var i = 0; i < information.results.length; i++) {
     console.log(information.results[i].name)
+    console.log(posterURL+ information.results[i].poster_path)
   }
- // console.log(information.results[0].name);
-// var nombre= information.data.title;
-// var url = information.data.image_url;
-//
-// var titulo=document.querySelector("#titulo");
-// titulo.innerHTML=nombre;
-// var imagen=document.querySelector(".imagen")
-// imagen.innerHTML =  ' <img src="'+url+'" alt="">'
 
 })
 .catch(function(error) {
