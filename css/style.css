@@ -7,20 +7,13 @@ body {
   background-image: url(../img/pochoclo.JPG);
 }
 /*  INICIO HEADER */
-.container {
-width:100%;
-align-items: center;
-margin: auto;
-}
 
 .main-header {
   text-align: center;
   background-color:black;
   opacity: 0.9;
   height:200px;
-
 }
-
 .logo:hover{
   -webkit-transform:scale(0.9);transform:scale(0.9);
 }
