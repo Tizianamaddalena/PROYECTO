@@ -14,7 +14,14 @@ body {
   opacity: 0.9;
   height:200px;
 }
-
+.main-nav ul {
+display: flex;
+justify-content: space-around;
+width: 50%;
+}
+.main-nav ul li{
+list-style: none;
+}
 .main-nav a {
 color:  #dc3545;
 text-decoration: none;
@@ -22,53 +29,25 @@ font-family: 'Fjalla One', sans-serif;
 font-size: 25px;
 }
 
-.main-nav ul {
-display: flex;
-justify-content: space-between;
-}
-
-.main-header header{
-  padding:10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.main-nav ul li{
-list-style: none;
-text-align: center;
-}
 .opciones:hover {
   color: white;
   border: outset 2px #dc3545;
   text-decoration: none;
   padding: 3px;
   background-color: #dc3545
-
 }
 
-.logo {
-  width:200px;
-}
+.logo {width:200px;}
+.logo:hover{-webkit-transform:scale(0.9);transform:scale(0.9);}
+.efecto-imagen {overflow: hidden;}
+
 nav {
 margin-top:-115px;
 }
 
-.logo:hover{
-  -webkit-transform:scale(0.9);transform:scale(0.9);
-}
-.efecto-imagen { overflow: hidden;}
+
+
 /*  FIN HEADER */
-.carousel1 li{
-  color: white;
-  list-style: none;
-  background-color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 25px;
-  border: outset 2px #dc3545;
-  padding: 3px;
-  width: 20%;
-  text-align: center;
-}
 
 .contenedor-body {
   background-color: black;
