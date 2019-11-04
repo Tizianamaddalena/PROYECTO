@@ -1,29 +1,30 @@
 main {
-  height: 100vh;
+  
+  height: auto;
 }
  .populares {
-   width: 50%;
+   width: 100%;
+
  }
  .mayorPuntaje {
-   width: 50%;
+   width: 100%;
  }
  .AlAire {
-   width: 50%;
+   width: 100%;
  }
  li {
    color:  #dc3545;
    text-decoration: none;
    font-family: 'Fjalla One', sans-serif;
-   font-size: 20px;
- }
- .secciones:hover {
-   color: white;
-   border: outset 2px #dc3545;
-   text-decoration: none;
-   padding: 3px;
-   background-color: #dc3545;
+   font-size: 30px;
+   margin: 4px;
+   text-align: center;
  }
 
  .secciones {
    text-transform: uppercase;
  }
+.uk-container {
+  background-color: black;
+  opacity: 0.9;
+}
