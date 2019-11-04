@@ -23,4 +23,7 @@ main {
    padding: 3px;
    background-color: #dc3545;
  }
- 
+
+ .secciones {
+   text-transform: uppercase;
+ }
