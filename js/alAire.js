@@ -1,7 +1,7 @@
 window.addEventListener('load',function(){
   //
 var api_key = "60be6317b0012697cb25d6ce427de920"
-fetch("https://api.themoviedb.org/3/tv/airing_today?api_key="+api_key+"&language=en-US")
+fetch("https://api.themoviedb.org/3/tv/airing_today?api_key=<<api_key>>"+api_key+"&language=en-US")
 .then(function(response) {
  return response.json()
 })
@@ -27,4 +27,5 @@ fetch("https://api.themoviedb.org/3/tv/airing_today?api_key="+api_key+"&language
 })
 .catch(function(error) {
  console.log("Error: " + error);
+})
 })
