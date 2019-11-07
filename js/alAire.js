@@ -8,11 +8,12 @@ fetch("https://api.themoviedb.org/3/tv/airing_today?api_key="+api_key+"&language
 .then(function(information) {
   var urlFija = "https://image.tmdb.org/t/p/original"
   var posterURL = ""
+  var titulo = ""
   var serie = ""
   var ul = document.querySelector('ul#AlAire')
   for (var i = 0; i < information.results.length; i++) {
     titulo = information.results[i].name
-    console.log(information.results[i].poster_path);
+    //console.log(information.results[i].poster_path);
     posterURL = urlFija + information.results[i].poster_path
 
     serie = '<li>'
@@ -20,7 +21,7 @@ fetch("https://api.themoviedb.org/3/tv/airing_today?api_key="+api_key+"&language
     serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
     serie += '</li>'
 
-    console.log(serie);
+    console.log(ul);
     ul.innerHTML += serie
   }
 })
