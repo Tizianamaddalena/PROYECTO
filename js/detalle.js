@@ -95,6 +95,11 @@ window.addEventListener('load',function(){
       console.log("Error: " + error);
      })
 
+     var btn = document.querySelector("#abracadabra")
+     btn.onclik = function() {
+
+     }
+
 
 
 })
