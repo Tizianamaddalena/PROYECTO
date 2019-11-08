@@ -11,6 +11,7 @@ main {
  .AlAire {
    width: 100%;
  }
+
  .main-nav > ul > li,
  .mayorPuntaje,
  .AlAire,
@@ -30,7 +31,6 @@ main {
   background-color: black;
   opacity: 0.9;
 }
-
-.series-generos {
+img {
   width: 70%;
 }
