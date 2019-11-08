@@ -11,7 +11,10 @@ main {
  .AlAire {
    width: 100%;
  }
- li {
+ .main-nav > ul > li,
+ .mayorPuntaje,
+ .AlAire,
+ .populares {
    color:  #dc3545;
    text-decoration: none;
    font-family: 'Fjalla One', sans-serif;
@@ -27,6 +30,7 @@ main {
   background-color: black;
   opacity: 0.9;
 }
-ul {
+
+.series-generos {
   width: 70%;
 }

@@ -3,9 +3,11 @@ header {
   background-color:black;
   opacity: 0.9;
   height:200px;
+  position: relative;
+  z-index: 200;
 }
 
-.main-nav ul {
+.main-nav > ul {
 display: flex;
 justify-content: space-around;
 width: 40%;
@@ -43,10 +45,16 @@ margin-top:-115px;
   font-size: 35px;
 }
 
-#generos:hover{
-  color: white;
-  border: outset 2px #dc3545;
+#generos {
+  color:  #dc3545;
   text-decoration: none;
-  padding: 3px;
-  background-color: #dc3545
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 35px;
 }
+
+.uk-dropdown-nav li {
+  font-size: 18px;
+}
+
+.uk-dropdown-nav li:hover {
+  color:rgb(0, 0, 0);
