@@ -18,7 +18,10 @@
     <nav class="main-nav">
       <ul>
         <li> <a href="series.html" class="opciones">SERIES</a></li>
-        <li> <a href="generos.html" class="opciones">GÉNEROS</a></li>
+        <li> <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button" class="opciones">GÉNEROS</button>
+            <div uk-dropdown="mode: click"></div>
+        </li> </div>
       </ul>
     </nav>
     <form action="resultados.html" method="GET">
