@@ -1,8 +1,15 @@
-var queryString = new URLSearchParams(location.search);
+window.addEventListener('load', function()){
 
-var dia = queryString.get('dia');
-var hora = queryString.get('hora');
+  fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&first_air_date_year=2013&with_genres=6531")
+  .then(function(response){
+    return response.json()
+  })
+}
+  .then(function(information)){
 
-var final = 'El día de tu cita es el ' + dia + ' a las ' + hora;
 
-console.log(final);
+  }
+
+  .catch(function(error){
+    console.log("Error:" + error)
+  })
