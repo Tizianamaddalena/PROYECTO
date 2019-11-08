@@ -14,13 +14,8 @@ width: 40%;
 list-style: none;
 }
 
-.opciones {
-color:  #dc3545;
-text-decoration: none;
-font-family: 'Fjalla One', sans-serif;
-font-size: 35px;
-}
 
+#generos:hover,
 .opciones:hover {
   color: white;
   border: outset 2px #dc3545;
@@ -37,19 +32,15 @@ nav {
 margin-top:-115px;
 }
 
-#generos {
-  background-color: rgba(6, 6, 6, 0);
-  border: none;
-  text-decoration: none;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 35px;
-}
 
-#generos {
+#generos,
+.opciones {
   color:  #dc3545;
   text-decoration: none;
   font-family: 'Fjalla One', sans-serif;
   font-size: 35px;
+  line-height: 40px;
+  border: none;
 }
 
 .uk-dropdown-nav li {

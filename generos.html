@@ -15,11 +15,21 @@
     <header>
       <a href="home.html"><img class="logo" src="img/logo.png" alt="logotipo" width="100px"></a>
       <nav class="main-nav">
-        <ul>
+        <ul class=series-generos>
           <li> <a href="series.html" class="opciones">SERIES</a></li>
-          <li> <a href="generos.html" class="opciones">GÉNEROS</a></li>
+          <li>
+            <button class="uk-button uk-button-default" type="button" class="opciones" id="generos">GENEROS</button>
+              <div uk-dropdown="pos: bottom-justify">
+                <ul class="uk-nav uk-dropdown-nav" id="dropdown-generos">
+                </ul>
+              </div>
+          </li>
         </ul>
       </nav>
+      <form action="resultadosbusq.html" method="GET">
+        <input type="text" name="palabra_de_busqueda" class="buscador">
+        <button type="submit">Buscar</button>
+      </form>
     </header>
 
     <main>
@@ -71,7 +81,7 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
   <script type="text/javascript" src='js/masPopulares.js'></script>
   <script type="text/javascript" src='js/mayorPuntaje.js'></script>
-  <script type="text/javascript" src="js/alAire.js">
+  <script type="text/javascript" src="js/alAire.js"></script>
+  <script type="text/javascript" src="js/generos.js"></script>
 
-  </script>
   </html>
