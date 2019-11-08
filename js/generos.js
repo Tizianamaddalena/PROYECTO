@@ -9,17 +9,18 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key="+api_key+"&language=e
 
 })
 .then(function(informacion){
-   var generos = ""
+   var generos = informacion.results;
 
    for (var i = 0; i <= 15; i++) {
-     generos = information.results[i].name
-     console.log(information.results[i].title);
-
-
-
-   }
-
-})
+     listaGeneros.innerHTML += `
+     <li> <button type="button" class="opciones" id="generos">GENEROS</button>
+     <div uk-dropdown="pos: bottom-justify">
+     <ul class="uk-nav uk-dropdown-nav" id="dropdown-generos">${generos[i].title}</ul>
+     </div>
+     </li>
+    `;
+  })
+  
 .catch(function(error){
   console.log("Error: " + error);
 })
