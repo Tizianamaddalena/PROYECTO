@@ -1,3 +1,5 @@
+window.addEventListener('load',function(){
+
 var seriesPorGenero = document.querySelector ()
 
 var queryString = new URLSearchParams(location.search);
@@ -10,3 +12,4 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&sort_by=with
 .then(function(informacion) {
   console.log(informacion);
 })
+}
