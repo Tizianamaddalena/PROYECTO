@@ -18,7 +18,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?api_key="+api_key+"&language=en
 
     serie = '<li>'
     serie +=   '<img src="'+posterURL+'" alt="">'
-    serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+titulo+'</h2></div>'
+    serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
     serie += '</li>'
 
     console.log(serie);
