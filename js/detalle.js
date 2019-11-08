@@ -81,16 +81,20 @@ window.addEventListener('load',function(){
        var opciones= ""
        var reco = document.querySelector('#recomendaciones')
        for (var i = 0; i < information.results.length; i++) {
-         opciones= information.results.poster_path[i]
+         opciones= "https://image.tmdb.org/t/p/original" + information.results[i].poster_path
          console.log(opciones);
+         reco.innerHTML +=
+         `<img class= "recomm" src="${opciones}" width="250">`
 
        }
-    //  var reco =document.querySelector("recomendaciones");
-    // var opinion = reco.innerHTML += information.results[0]
+
+
      })
 
      .catch(function(error) {
       console.log("Error: " + error);
      })
+
+
 
 })
