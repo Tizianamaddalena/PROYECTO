@@ -4,7 +4,7 @@
 }
 
 main {
-  height: 100vh;
+  height: auto;
 }
 
 body {
@@ -20,6 +20,7 @@ body {
 
 li {
   list-style: none;
+   font-family: 'Fjalla One', sans-serif;
 }
 
 /* INICIO MEDIA QUERIES CEL - TABLET - SMARTPHONE */
