@@ -14,14 +14,22 @@ fetch("https://api.themoviedb.org/3/search/tv?api_key=" + api_key + "&language=e
     var resultados = data.results;
     var posterURL=""
     var urlFija="https://image.tmdb.org/t/p/original"
+    var titulo= ""
       var ul = document.querySelector('ul#ResultadosBusqueda')
+
+    //console.log(resultados);
     if (resultados.length > 0) {
       for (var i = 0; i < resultados.length; i++) {
-      posterURL= urlFija + resultados[i].poster_path
+          titulo = resultados[i].name
+        if (resultados[i].poster_path === null) {
+          posterURL= ""
+        } else {
+          posterURL= urlFija + resultados[i].poster_path;
+        }
 
       serie = '<li>'
       serie +=   '<img src="'+posterURL+'" alt="">'
-      serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
+      serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+titulo+'</h2></div>'
       serie += '</li>'
 
       ul.innerHTML += serie
