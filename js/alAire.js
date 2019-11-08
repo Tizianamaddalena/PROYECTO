@@ -13,7 +13,7 @@ fetch("https://api.themoviedb.org/3/tv/airing_today?api_key="+api_key+"&language
   var ul = document.querySelector('ul#AlAire')
   for (var i = 0; i < information.results.length; i++) {
     titulo = information.results[i].name
-    //console.log(information.results[i].poster_path);
+    console.log(information.results[i].poster_path);
     posterURL = urlFija + information.results[i].poster_path
 
     serie = '<li>'
