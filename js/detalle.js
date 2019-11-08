@@ -80,7 +80,7 @@ window.addEventListener('load',function(){
        console.log(information);
        var opciones= ""
        var reco = document.querySelector('#recomendaciones')
-       for (var i = 0; i < information.results.length; i++) {
+       for (var i = 10; i < information.results.length; i++) {
          opciones= "https://image.tmdb.org/t/p/original" + information.results[i].poster_path
          console.log(opciones);
          reco.innerHTML +=
