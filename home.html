@@ -18,10 +18,11 @@
     <nav class="main-nav">
       <ul>
         <li> <a href="series.html" class="opciones">SERIES</a></li>
-        <li> <div class="uk-inline">
-            <button class="uk-button uk-button-default" type="button" class="opciones">GÉNEROS</button>
-            <div uk-dropdown="mode: click"></div>
-        </li> </div>
+        <li> <button type="button" class="opciones" id="generos">GÉNEROS</button>
+            <div uk-dropdown="pos: bottom-justify">
+            <ul class="uk-nav uk-dropdown-nav" id="dropdown-generos"></ul>
+            </div>
+        </li>
       </ul>
     </nav>
     <form action="resultados.html" method="GET">
@@ -116,7 +117,6 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
 <script type="text/javascript" src='js/masPopulares.js'></script>
 <script type="text/javascript" src='js/mayorPuntaje.js'></script>
-<script type="text/javascript" src="js/alAire.js">
-
-</script>
+<script type="text/javascript" src="js/alAire.js"></script>
+<script type="text/javascript" src="js/generos.js"></script>
 </html>

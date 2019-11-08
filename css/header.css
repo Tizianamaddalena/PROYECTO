@@ -34,3 +34,19 @@ font-size: 35px;
 nav {
 margin-top:-115px;
 }
+
+#generos {
+  background-color: rgba(6, 6, 6, 0);
+  border: none;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 35px;
+}
+
+#generos:hover{
+  color: white;
+  border: outset 2px #dc3545;
+  text-decoration: none;
+  padding: 3px;
+  background-color: #dc3545
+}
