@@ -7,25 +7,32 @@ fetch("https://api.themoviedb.org/3/tv/airing_today?api_key="+api_key+"&language
 })
 .then(function(information) {
   var urlFija = "https://image.tmdb.org/t/p/original"
-  var posterURL = ""
   var titulo = ""
+  var posterURL = ""
   var serie = ""
   var ul = document.querySelector('ul#AlAire')
   for (var i = 0; i < information.results.length; i++) {
     titulo = information.results[i].name
+    var id = information.results[i].id
+    console.log(id);
     console.log(information.results[i].poster_path);
     posterURL = urlFija + information.results[i].poster_path
 
     serie = '<li>'
+    serie = '<a href="detalle.html?id=' + id + '">'
     serie +=   '<img src="'+posterURL+'" alt="">'
     serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
+    serie += '</a>'
     serie += '</li>'
 
-    console.log(ul);
+    console.log(serie);
     ul.innerHTML += serie
   }
 })
 .catch(function(error) {
  console.log("Error: " + error);
 })
+
+
+
 })

@@ -14,7 +14,7 @@ fetch("https://api.themoviedb.org/3/search/tv?api_key=" + api_key + "&language=e
     var resultados = data.results;
     var posterURL=""
     var urlFija="https://image.tmdb.org/t/p/original"
-    var titulo= ""
+    var titulo=""
       var ul = document.querySelector('ul#ResultadosBusqueda')
 
     //console.log(resultados);
