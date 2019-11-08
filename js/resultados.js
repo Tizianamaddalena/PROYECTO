@@ -14,16 +14,26 @@ fetch("https://api.themoviedb.org/3/search/tv?api_key=" + api_key + "&language=e
     var resultados = data.results;
     var posterURL=""
     var urlFija="https://image.tmdb.org/t/p/original"
+    var titulo= ""
       var ul = document.querySelector('ul#ResultadosBusqueda')
+
+    //console.log(resultados);
     if (resultados.length > 0) {
-      posterURL= urlFija + resultados.poster_path
+      for (var i = 0; i < resultados.length; i++) {
+          titulo = resultados[i].name
+        if (resultados[i].poster_path === null) {
+          posterURL= ""
+        } else {
+          posterURL= urlFija + resultados[i].poster_path;
+        }
 
-      resultados = '<li>'
-      resultados +=   '<img src="'+posterURL+'" alt="">'
-      resultados +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
-      resultados += '</li>'
+      serie = '<li>'
+      serie +=   '<img src="'+posterURL+'" alt="">'
+      serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+titulo+'</h2></div>'
+      serie += '</li>'
 
-      ul.innerHTML += resultados
+      ul.innerHTML += serie
+    }
     } else {
       alert("No se encontraron series con ese Nombre");
     }
