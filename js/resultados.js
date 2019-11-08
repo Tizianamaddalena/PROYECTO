@@ -22,14 +22,14 @@ fetch("https://api.themoviedb.org/3/search/tv?api_key=" + api_key + "&language=e
       for (var i = 0; i < resultados.length; i++) {
           titulo = resultados[i].name
         if (resultados[i].poster_path === null) {
-          posterURL= ""
+         posterURL="" + titulo
         } else {
           posterURL= urlFija + resultados[i].poster_path;
         }
 
       serie = '<li>'
       serie +=   '<img src="'+posterURL+'" alt="">'
-      serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+titulo+'</h2></div>'
+      serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
       serie += '</li>'
 
       ul.innerHTML += serie
