@@ -26,6 +26,7 @@ main {
 .uk-container {
   background-color: black;
   opacity: 0.9;
+  padding: 30px 15px;
 }
 
 .uk-container img {
@@ -33,6 +34,6 @@ main {
   height: 90%;
 }
 
-.uk-container {
-  padding: 30px 15px;
+.uk-container img:hover{
+  opacity: 0.6;
 }

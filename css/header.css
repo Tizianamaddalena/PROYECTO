@@ -14,20 +14,30 @@ width: 40%;
 list-style: none;
 }
 
+#generos,
+.opciones {
+  color: #dc3545;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  border: solid 2px rgba(255, 255, 255, 0);
+  padding: 3px;
+}
 
 #generos:hover,
 .opciones:hover {
   color: white;
   border: outset 2px #dc3545;
-  text-decoration: none;
   padding: 3px;
-  background-color: #dc3545
+  background-color: #dc3545;
+  text-decoration: none;
 }
 
 .logo {width:200px;}
 .logo:hover{-webkit-transform:scale(0.9);transform:scale(0.9);}
-.efecto-imagen {overflow: hidden;
-}
+.efecto-imagen {overflow: hidden;}
+
 .buscar {
   position: absolute;
   left:70%;
@@ -38,22 +48,12 @@ nav {
 margin-top:-115px;
 }
 
-
-#generos,
-.opciones {
-  color:  #dc3545;
-  text-decoration: none;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 35px;
-  line-height: 40px;
-  border: none;
-}
-
-.uk-dropdown-nav li {
+.uk-dropdown-nav a {
   font-size: 18px;
   text-transform: capitalize;
 }
 
-.uk-dropdown-nav li:hover {
-  color:rgb(0, 0, 0);
+.uk-dropdown-nav a:hover {
+  text-decoration: underline;
+  color: black;
 }

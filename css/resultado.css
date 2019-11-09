@@ -4,17 +4,20 @@
   color: white;
   z-index: 200;
   position: absolute;
-  top: 50%;
-  padding: 50px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: 'Fjalla One', sans-serif;
+  bottom: 50px;
+  margin: 20px;
+  
 }
 
 .uk-slider-items h2:hover {
   text-decoration: underline;
 }
 
-.uk-slider-items img {
+.uk-active img {
   z-index: 0;
+  position: absolute;
 }
 
 .uk-slider-items img:hover{
@@ -31,7 +34,6 @@ text-decoration: none;
 font-family: 'Fjalla One', sans-serif;
 font-size: 25px;
 text-align: center;
-padding-top: 30px;
 }
 
 .uk-container div{
