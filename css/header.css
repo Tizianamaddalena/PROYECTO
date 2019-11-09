@@ -14,18 +14,20 @@ width: 40%;
 list-style: none;
 }
 
-#generos,
+
 .opciones {
   color: #dc3545;
   text-decoration: none;
   font-family: 'Fjalla One', sans-serif;
   font-size: 35px;
-  line-height: 40px;
   border: solid 2px rgba(255, 255, 255, 0);
   padding: 3px;
 }
 
-#generos:hover,
+.series-generos button {
+  line-height: 40px;
+}
+
 .opciones:hover {
   color: white;
   border: outset 2px #dc3545;
