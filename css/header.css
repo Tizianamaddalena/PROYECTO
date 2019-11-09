@@ -51,7 +51,9 @@ margin-top:-115px;
 
 .uk-dropdown-nav li {
   font-size: 18px;
+  text-transform: capitalize;
 }
 
 .uk-dropdown-nav li:hover {
   color:rgb(0, 0, 0);
+}

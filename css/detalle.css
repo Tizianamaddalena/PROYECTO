@@ -6,17 +6,20 @@ main {
   opacity: 0.9;
 
   }
-  li {
+
+li {
     color:  #dc3545;
     font-family: 'Fjalla One', sans-serif;
     font-size: 40px;
   }
+
 h2{
   color: white;
   font-family: 'Fjalla One', sans-serif;
   font-size: 30px;
 }
-p {
+
+.uk-container p {
   color: white;
   font-family: 'Fjalla One', sans-serif;
   font-size: 20px;
@@ -34,11 +37,6 @@ a:hover {
   text-decoration: none;
 }
 
-
-
-
-
-
 #contenedor-carrusel {
   width: 50%;
 }
@@ -46,6 +44,7 @@ a:hover {
   width: 150px;
   justify-content: space-around;
 }
+
 button {
   color:#dc3545 ;
   font-family: 'Fjalla One', sans-serif;
