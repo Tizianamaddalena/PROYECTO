@@ -19,7 +19,7 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key="+api_key+"&language=es-A
     posterURL = urlFija + information.results[i].poster_path
 
     serie = '<li>'
-    serie = '<a href="detalle.html?id=' + id + '">'
+    serie += '<a href="detalle.html?id=' + id + '">'
     serie +=   '<img src="'+posterURL+'" alt="">'
     serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
     serie += '</a>'

@@ -81,10 +81,13 @@ window.addEventListener('load',function(){
        var opciones= ""
        var reco = document.querySelector('#recomendaciones')
        for (var i = 10; i < information.results.length; i++) {
+         var id =  information.results[i].id
          opciones= "https://image.tmdb.org/t/p/original" + information.results[i].poster_path
          console.log(opciones);
          reco.innerHTML +=
-         `<img class= "recomm" src="${opciones}" width="250">`
+         `<a href="detalle.html?id=${id}">
+         <img class= "recomm" src="${opciones}" width="250">
+         </a>`
 
        }
 

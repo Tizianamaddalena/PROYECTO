@@ -12,7 +12,7 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key="+api_key+"&page=1")
 
    for (var i = 0; i <= 15; i++) {
      listaGeneros.innerHTML += `
-        <li><a href="series-por-genero.html">${generos[i].name}</a></li>
+        <li><a href="series-por-genero.html?genero=${generos[i].id}">${generos[i].name}</a></li>
     `
     }
   })
