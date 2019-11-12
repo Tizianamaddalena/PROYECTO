@@ -14,6 +14,23 @@ width: 40%;
 list-style: none;
 }
 
+.buscador {
+  border-radius: 18px;
+}
+.boton {
+  font-family: 'Fjalla One', sans-serif;
+  background-color: rgba(204, 67, 140, 0);
+  padding: 5px;
+  color: #dc3545;
+  border: outset 2px rgba(139, 137, 90, 0);
+
+}
+.boton:hover {
+  background-color:black;
+  cursor: pointer;
+  border: outset 2px #dc3545;
+  padding: 5px;
+}
 
 .opciones {
   color: #dc3545;
