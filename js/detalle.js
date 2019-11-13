@@ -89,6 +89,9 @@ window.addEventListener('load',function(){
          <img class= "recomm" src="${opciones}" width="250">
          </a>`
 
+         //
+
+
        }
 
 
@@ -102,6 +105,13 @@ window.addEventListener('load',function(){
      btn.onclik = function() {
 
      }
+
+// FUNCION QUE APAREZCA RECOMENDACIONES
+
+
+
+
+
 
 
 
