@@ -10,13 +10,13 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&sort_by=popu
 .then(function(response){
   return response.json()
 })
-.then(function(informacion){
-  var generos = informacion.genres;
-
-  for (var i =0; i<=1; i++) {
-  nombreGenero.innerHTML += `
-  <h2>${generos[i].name}</h2>
-  `
+.then(function(information){
+  var generos = "";
+  var titulo = ""
+  for (var i =0; i< information.results.length; i++) {
+    generos = information.results.genre_ids
+    titulo= information.results.name
+console.log(titulo);
 }
 })
 .catch(function(error) {
