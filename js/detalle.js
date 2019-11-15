@@ -59,14 +59,12 @@ window.addEventListener('load',function(){
       console.log(information.results[0]);
       var contTrailer = document.querySelector("#trailer");
 
-       var detalleSerie = document.querySelector("#detalle-serie");
-
       var iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + information.results[0].key + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-      detalleSerie.innerHTML += iframe;
-
-
       var urlVideo = 'https://www.youtube.com/watch?v=' + information.results[0].key;
-      contTrailer.innerHTML = "<a href='" + urlVideo + "' target='_blank'>VER TRAILER</a>";
+      contTrailer.innerHTML += `
+      <section>${iframe}</section>
+      <a href="${urlVideo}"' target='_blank'+">VER TRAILER</a>
+      `
 
     })
 
@@ -89,12 +87,15 @@ window.addEventListener('load',function(){
 
       if (respuesta.results.length > 0) {
         var comentarios = document.querySelector("#reviews")
-        var contenido = respuesta.results.content
-        comentarios.innerHTML = `
-        <h2>Opiniones de otros usuarios</h2>
+        //for (var i = 0; i < results.length; i++) {
+        var contenido = respuesta.results[0].content
+        var autor = respuesta.results[0].author
+        comentarios.innerHTML += `
+        <h3>Opiniones de otros usuarios</h3>
         <p>${contenido}</p>
+        <p>Por ${autor}</p>
         `
-      }
+      }//}
 
 
     })
