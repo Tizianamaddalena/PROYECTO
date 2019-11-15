@@ -3,9 +3,8 @@
   padding: 0;
 }
 
-
 main {
-  height: auto;
+  min-height: 100vh;
 }
 
 body {

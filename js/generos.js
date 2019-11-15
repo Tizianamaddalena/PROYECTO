@@ -21,3 +21,23 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key="+api_key+"&page=1")
   console.log("Error: " + error);
 })
 })
+
+// PAGINA GENERO ESPECIFICO
+var api_key = "60be6317b0012697cb25d6ce427de920"
+var urlParams = new URLSearchParams(location.search);
+var id = urlParams.get('id');
+
+fetch ("https://api.themoviedb.org/3/discover/tv/?api_key="+api_key+"&language=en-US")
+  .then(function(response){
+    return response.json()
+  })
+  .then(function(informacion){
+    console.log(informacion);
+    var generoElegido = document.querySelector("#genero-elegido");
+    var nombre = informacion.genres.name
+
+  .catch(function(error){
+    console.log("Error: " + error);
+  })
+
+})
