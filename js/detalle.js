@@ -92,7 +92,7 @@ window.addEventListener('load',function(){
         var autor = respuesta.results[0].author
         comentarios.innerHTML += `
         <h3>Opiniones de otros usuarios</h3>
-        <p>${contenido}</p>
+        <p> "${contenido}"</p>
         <p>Por ${autor}</p>
         `
       }//}
