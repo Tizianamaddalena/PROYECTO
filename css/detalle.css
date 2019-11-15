@@ -87,3 +87,30 @@ button:hover {
 .info_serie img {
   max-width: none;
 }  /* tuve que poner esto para que no me achicara el poster de la serie */
+
+#reviews h3 {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  padding: 0 10px;
+}
+
+#masinfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+#trailer,
+#reviews {
+  flex-wrap: wrap;
+}
+#reviews {
+  margin: 20px;
+  width: 40%;
+  margin-right: 0;
+}
+
+#reviews p {
+  text-align: justify;
+  font-size: 16px;
+  padding: 0;
+}

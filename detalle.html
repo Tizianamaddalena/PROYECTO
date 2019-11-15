@@ -36,6 +36,7 @@
       <form action="resultadosbusq.html" method="GET" class=buscar>
         <input type="text" name="palabra_de_busqueda" class="buscador" minlength="3" required>
         <button type="submit" class="boton">Buscar</button>
+        <li class="busq_avanzada"><a href="avanzado.html">Busqueda avanzada</a></button>
       </form>
     </header>
 
@@ -46,10 +47,13 @@
           <li>DETALLE DE LA SERIE</li>
           <div id="detalle-serie">
           </div>
-          <div id="trailer">
+          <div id=masinfo>
+            <section id="trailer">
+            </section>
+            <section id="reviews">
+            </section>
           </div>
-          <div id="reviews">
-          </div>
+
           <button id="abracadabra" type="button" name="button">Relacionadas a este título</button>
 
           <div uk-slider= "autoplay: true" class="uk-position-relative uk-visible-toggle uk-light" id="contenedor-carrusel" tabindex="-1" uk-slider>
