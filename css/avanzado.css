@@ -11,9 +11,18 @@ label {
 select {
   border-radius: 2px;
   font-family: 'Fjalla One', sans-serif;
+  width: 20%
 }
 li {
   color: #dc3545;
   font-family: 'Fjalla One', sans-serif;
   font-size: 30px;
+}
+.boton {
+  font-family: 'Fjalla One', sans-serif;
+  background-color: rgba(204, 67, 140, 0);
+  padding: 5px;
+  color: #dc3545;
+  border: outset 2px rgba(139, 137, 90, 0);
+  font-size: 20px;
 }

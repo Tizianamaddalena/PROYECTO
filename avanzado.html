@@ -46,26 +46,28 @@
     <div class="uk-container">
   <li>BUSQUEDA AVANZADA</li>
 
-  <form class="formulario-interior" action="index.html" method="post">
+  <form class="formulario-interior" action="avanzado.html" method="GET">
     <label>GÉNERO</label>
-    <select class="genero-elegido" name="" required>
-      <option value="" class="genero-elegido">AGREGAR OPCIONES</option>
+    <select id="genero-elegido" name="genre">
+
     </select>
 
     <label>GÉNEROS QUE SE DESEAN EXCLUIR</label>
-    <select class="genero-excluido" name="">
+    <select class="genero-excluido" name="withoutGenres">
       <option value="">AGREGAR OPCIONES</option>
     </select>
 
     <label>AÑO DE ESTRENO</label>
-    <select class="año'estreno" name="">
+    <select class="año'estreno" name="date">
       <option value="">AGREGAR OPCIONES</option>
     </select>
 
     <label>ORDEN DE LOS RESULTADOS</label>
-    <select class="genero-excluido" name="">
+    <select class="genero-excluido" name="order">
       <option value="">AGREGAR OPCIONES</option>
     </select>
+
+    <button type="submit" name="button" class="boton">BUSCAR</button>
 
 
   </form>
