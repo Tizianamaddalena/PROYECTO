@@ -1,0 +1,10 @@
+#Series{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: auto;
+}
+.secciones{
+  color: #dc3545;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+}
