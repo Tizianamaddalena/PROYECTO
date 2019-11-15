@@ -39,7 +39,6 @@
         <button type="submit" class="boton">Buscar</button>
         <li class="busq_avanzada"><a href="avanzado.html">Busqueda avanzada</a></button>
       </form>
-    	</form>
     </header>
 
 <main>
@@ -50,26 +49,44 @@
   <form class="formulario-interior" action="avanzado.html" method="GET">
     <label>GÉNERO</label><br>
     <select id="genero-elegido" name="genre">
+      <option value="">Elegi</option>
     </select>
-<br>
+<!-- <br>
     <label>GÉNEROS QUE SE DESEAN EXCLUIR</label><br>
     <select id="genero-excluido" name="withoutGenres">
-    </select>
+      <option value="">Elegi</option>
+    </select> -->
 <br>
     <label>AÑO DE ESTRENO</label><br>
-      <input type="text" name="date" value="" id="año-estreno">
+      <input type="text" name="date" value="" id="anio-estreno">
 <br>
     <label>ORDEN DE LOS RESULTADOS</label><br>
     <select id="orden" name="orden">
+      <option value="">Elegi</option>
+      <option value="vote_average.desc">Vote Average DESC</option>
+      <option value="vote_average.asc">Vote Average ASC</option>
+      <option value="first_air_date.desc">First Air Date DESC</option>
+      <option value="first_air_date.asc">First Air Date ASC</option>
+      <option value="popularity.desc">Popularity DESC</option>
+      <option value="popularity.asc">Popularity ASC</option>
     </select>
 <br>
-    <button type="submit" name="button" class="boton">BUSCAR</button>
+    <button type="submit" class="boton">BUSCAR</button>
 
 
   </form>
 
+  <!-- Contenedor para los resultados -->
+  <div class="resultados-buscador-avanzado">
+    <ul>
+
+    </ul>
+  </div>
+  
 </div>
 </div>
+
+
 
 </main>
 
