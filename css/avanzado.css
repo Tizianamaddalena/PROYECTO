@@ -1,23 +1,33 @@
-main {
-  min-height: 100vh;
-}
-
-
-}
 label {
-  color:  #dc3545;
-  font-family: 'Fjalla One', sans-serif;
+  display: block;
 }
+
+form label,
+form input,
+form legend{
+  color: #dc3545;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 5px;
+}
+
+input,
+select{
+  border-radius: 10px;
+  font-family: 'Fjalla One', sans-serif;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
 select {
-  border-radius: 2px;
-  font-family: 'Fjalla One', sans-serif;
-  width: 20%
+  padding: 10px;
 }
-li {
+
+#titulo-main {
   color: #dc3545;
   font-family: 'Fjalla One', sans-serif;
   font-size: 30px;
 }
+
 .boton {
   font-family: 'Fjalla One', sans-serif;
   background-color: rgba(204, 67, 140, 0);
@@ -30,10 +40,16 @@ main{
   text-align: center;
 }
 
-.resultados {
+#serie_recomm {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+#serie_recomm section {
+  flex-wrap: wrap;
+  width: 50%;
+}
+
 a{
   color: #dc3545;
   font-family: 'Fjalla One', sans-serif;
@@ -42,9 +58,9 @@ a:hover {
   color: #dc3545;
   text-decoration: none
 }
+
 h4 {
 font-family: 'Fjalla One', sans-serif;
 color: white;
 font-size: 20px;
-
 }

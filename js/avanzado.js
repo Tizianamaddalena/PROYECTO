@@ -82,12 +82,16 @@ window.addEventListener('load',function(){
           }
 
           contenidoHTML += `
-            <li>
+            <div id="serie_recomm">
+            <section id="img_titulo">
               <h3>${arrayDeResultados[i].name}</h3>
-              <h4>${arrayDeResultados[i].overview}</h4>
               <img src="${imgURL}" width="20%">
+            </section>
+            <section id="resumen">
+              <h4>${arrayDeResultados[i].overview}</h4>
               <a href="detalle.html?id=${arrayDeResultados[i].id}">VER MAS</a>
-            <li>
+            </section>
+            </div>
           `
         }
 
