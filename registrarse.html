@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/registrarse.css">
   </head>
   <body>
     <header>
@@ -45,19 +46,22 @@
         <section>
           <div class="">
             <p>
-              <label for="nombre" >Nombre</label>
+              <label for="nombre"  class= "nombre">Nombre</label>
               <input id="nombre"type="text" name="usuario" value="">
             </p>
+            <br>
             <p>
-              <label for="email">Email</label>
+              <label for="email" class="email">Email</label>
               <input id="email"type="email" name="correo" value="" required>
             </p>
+            <br>
             <p>
-              <label for="contraseña">Contraseña</label>
+              <label for="contraseña" class= "contraseña">Contraseña</label>
               <input id="contraseña" type="password" name="contraseña" value="" required>
             </p>
+            <br>
             <p>
-              <label for="Pais">Pais de origen</label>
+              <label for="Pais" class= "pais">Pais de origen</label>
               <select class="" name= "Origen">
                 <option disabled selected> Paìs</option>
                 <option value="argentina">Argentina</option>
@@ -65,14 +69,18 @@
                 <option value="ee.uu">Estados Unidos</option>
                 <option value="otro"> Otro</option>
               </select>
+              <br>
               <legend class="info">Desea recibir Informacion?</legend>
-                <label for="si"><input id="si" type="radio" name="recibirInfo" value="">SI</label>
-                <label for="no"><input id="no" type="radio" name="recibirInfo" value="">NO</label>
-
+              
+                <label for="si" class= "si"><input id="si" type="radio" name="recibirInfo" value="">SI</label>
+                <br>
+                <label for="no" class="no"><input id="no" type="radio" name="recibirInfo" value="">NO</label>
+                <br>
           <p>
             <textarea name="text" rows="8" cols="80">Dejanos un Comentario :) </textarea>
           </p>
-          <button type="submit" name="button">Enviar</button>
+          <br>
+          <button type="submit" name="button" class= "enviar">Enviar</button>
     </div>
   </section>
   </div>
