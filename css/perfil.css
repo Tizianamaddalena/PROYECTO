@@ -1,0 +1,34 @@
+.iniciar_sesion label {
+  color: #dc3545;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 5px;
+  display: block;
+}
+
+main {
+  text-align: center;
+}
+
+input{
+  border-radius: 10px;
+  font-family: 'Fjalla One', sans-serif;
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.enviar {
+  background-color: rgba(204, 67, 140, 0);
+  padding: 5px;
+  color: #dc3545;
+  border: outset 2px rgba(139, 137, 90, 0);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  }
+
+.enviar:hover {
+    cursor: pointer;
+    border: outset 2px #dc3545;
+    padding: 5px;
+  }

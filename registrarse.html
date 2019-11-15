@@ -2,16 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Home</title>
+
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css"/>
 
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/registrarse.css">
   </head>
+
   <body>
     <header>
       <a href="home.html"><img class="logo" src="img/logo.png" alt="logotipo" width="100px"></a>
@@ -34,10 +35,10 @@
         </ul>
       </div>
       <form action="resultadosbusq.html" method="GET" class=buscar>
-        <input type="text" name="palabra_de_busqueda" class="buscador" minlength="3" required>
-        <button type="submit" class="boton">Buscar</button>
-        <li class="busq_avanzada"><a href="avanzado.html">Busqueda avanzada</a></li>
-      </form>
+    		<input type="text" name="palabra_de_busqueda" class="buscador" minlength="3" required>
+    		<button type="submit" class="boton">Buscar</button>
+        <li class="busq_avanzada"><a href="avanzado.html">Busqueda avanzada</a></button>
+    	</form>
     </header>
 
     <main>
@@ -45,23 +46,17 @@
       <div class="uk-container">
         <section>
           <div class="">
-            <p>
-              <label for="nombre"  class= "nombre">Nombre</label>
-              <input id="nombre"type="text" name="usuario" value="">
-            </p>
-            <br>
-            <p>
-              <label for="email" class="email">Email</label>
-              <input id="email"type="email" name="correo" value="" required>
-            </p>
-            <br>
-            <p>
-              <label for="contraseña" class= "contraseña">Contraseña</label>
-              <input id="contraseña" type="password" name="contraseña" value="" required>
-            </p>
-            <br>
-            <p>
-              <label for="Pais" class= "pais">Pais de origen</label>
+            <form class="" action="index.html" method="post">
+              <label for="nombre">Nombre</label>
+                <input type="text" name="usuario" value="" required placeholder="Nombre">
+
+              <label for="email">Email</label>
+                <input type="email" name="correo" value="" required placeholder="E-mail">
+
+              <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" value="" required placeholder="Contraseña">
+
+              <label for="Pais" id='pais'>Pais de origen</label>
               <select class="" name= "Origen">
                 <option disabled selected> Paìs</option>
                 <option value="argentina">Argentina</option>
@@ -69,21 +64,18 @@
                 <option value="ee.uu">Estados Unidos</option>
                 <option value="otro"> Otro</option>
               </select>
-              <br>
-              <legend class="info">Desea recibir Informacion?</legend>
-              
+
+              <legend class="info">Desea recibir Información?</legend>
                 <label for="si" class= "si"><input id="si" type="radio" name="recibirInfo" value="">SI</label>
-                <br>
                 <label for="no" class="no"><input id="no" type="radio" name="recibirInfo" value="">NO</label>
-                <br>
-          <p>
-            <textarea name="text" rows="8" cols="80">Dejanos un Comentario :) </textarea>
-          </p>
-          <br>
-          <button type="submit" name="button" class= "enviar">Enviar</button>
-    </div>
-  </section>
-  </div>
+
+              <button type="submit" name="button" class="enviar">Enviar</button>
+            </form>
+
+            <p id="cuenta_existente">¿Ya tenes una cuenta?<a href="perfil.html">Inicia sesión</a></p>
+          </div>
+        </section>
+      </div>
   </div>
   </main>
 
@@ -117,13 +109,19 @@
       <img src="img/tmdb.png" class="thdb"alt="">
     </section>
   </footer>
-  </body>
-  <script src="https://kit.fontawesome.com/e32b1dc814.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</body>
 
 
-  <!-- UIkit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+<script src="https://kit.fontawesome.com/e32b1dc814.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+<script type="text/javascript" src="js/generos.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+
 </html>

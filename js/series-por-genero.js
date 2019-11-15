@@ -13,7 +13,7 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&language=en-
 .then(function(information){
   var generos = "";
   var titulo = ""
-  for (var i =0; i< information.results.length; i++) {
+  for (var i =0; i < information.results.length; i++) {
     generos = information.results.genre_ids
     titulo= information.results.name
 console.log(information);

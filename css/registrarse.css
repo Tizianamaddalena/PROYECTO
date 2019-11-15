@@ -1,59 +1,49 @@
-.nombre{
+form label,
+form input,
+form legend{
   color: #dc3545;
   font-family: 'Fjalla One', sans-serif;
+  padding: 5px;
+}
 
-}
-.email{
+.enviar {
+  background-color: rgba(204, 67, 140, 0);
+  padding: 5px;
   color: #dc3545;
+  border: outset 2px rgba(139, 137, 90, 0);
+  font-size: 20px;
+  text-transform: uppercase;
   font-family: 'Fjalla One', sans-serif;
-}
-.contraseña {
-  color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
-}
-.pais{
-  color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
-}
-.info{
-  color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
-}
-.enviar{
-  color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
-}
-.si{
-  color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
-}
-.no{
-  color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
-}
-.enviar{
-    font-family: 'Fjalla One', sans-serif;
-    background-color: rgba(204, 67, 140, 0);
-    padding: 5px;
-    color: #dc3545;
-    border: outset 2px rgba(139, 137, 90, 0);
-    font-size: 20px;
-    text-transform: uppercase;
   }
+
 .enviar:hover {
-    background-color:black;
     cursor: pointer;
     border: outset 2px #dc3545;
     padding: 5px;
   }
-input{
+
+input,
+select{
   border-radius: 10px;
   font-family: 'Fjalla One', sans-serif;
+  width: 30%;
+  margin-bottom: 20px;
 }
-textarea{
-  border-radius: 10px;
-  font-family: 'Fjalla One', sans-serif;
-}
+
+
 main{
   text-align: center;
+}
+
+label {
+  display: block;
+}
+
+#cuenta_existente a{
+  color: white;
+  padding-left: 8px;
+}
+
+#pais {
+  font-size: 13px;
 }

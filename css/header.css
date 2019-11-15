@@ -20,10 +20,7 @@ list-style: none;
   padding: 5px;
   font-size: 12px;
   font-family: 'Fjalla One', sans-serif;
-}
-
-.buscador:focus {
-  border: solid 1px #dc3545;
+  text-transform: capitalize;
 }
 
 .boton {
@@ -110,14 +107,12 @@ margin-top:-115px;
   text-decoration: none;
   color: white;
   font-size: 14px;
-  margin-top: 5px;
 
 }
 
 .busq_avanzada {
   text-align: left;
-  padding-left: 40px;
-  padding-top: 5px;
+  padding-left: 60px;
 }
 
 .busq_avanzada a:hover {
