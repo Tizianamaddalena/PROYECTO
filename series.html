@@ -21,7 +21,7 @@
         <ul class=series-generos>
           <li> <a href="series.html" class="opciones">SERIES</a></li>
           <li>
-            <button class="uk-button uk-button-default opciones" type="button">GENEROS</button>
+            <button class="uk-button uk-button-default opciones" type="button">GÉNEROS</button>
               <div uk-dropdown="pos: bottom-justify">
                 <ul class="uk-nav uk-dropdown-nav" id="dropdown-generos">
                 </ul>
@@ -29,9 +29,15 @@
           </li>
         </ul>
       </nav>
-      <form action="resultadosbusq.html" method="GET" class="buscar">
-    		<input type="text" name="palabra_de_busqueda" class="buscador">
-    		<button type="submit">Buscar</button>
+      <div class="cuenta_usuario">
+        <ul id="opciones_usuario">
+          <li><a href="perfil.html">Iniciar sesión</a></li>
+          <li><a href="registrarse.html">Registrarse</a></li>
+        </ul>
+      </div>
+      <form action="resultadosbusq.html" method="GET" class=buscar>
+    		<input type="text" name="palabra_de_busqueda" class="buscador" minlength="3" required>
+    		<button type="submit" class="boton">Buscar</button>
     	</form>
     </header>
 
