@@ -26,3 +26,6 @@ li {
   border: outset 2px rgba(139, 137, 90, 0);
   font-size: 20px;
 }
+main{
+  text-align: center;
+}

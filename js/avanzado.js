@@ -5,7 +5,7 @@ var searchParams = new URLSearchParams(window.location.search);
 var genre = searchParams.get('genre')
 var withoutG = searchParams.get('withoutGenres')
 var date = searchParams.get('date')
-var order = searchParams.get('order')
+var order = searchParams.get('orden')
 
 
 
@@ -50,3 +50,13 @@ console.log(informacion);
 .catch(function(error){
   console.log("Error: " + error);
 })
+
+// SELECCION DE EXCLUSION DE GENERO
+
+
+
+
+
+
+
+// SORT BY
