@@ -2,51 +2,81 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
-
+    <title></title>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css"/>
 
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/registrarse.css">
   </head>
+  <body>
+    <header>
+      <a href="home.html"><img class="logo" src="img/logo.png" alt="logotipo" width="100px"></a>
+      <nav class="main-nav">
+        <ul class="series-generos">
+          <li> <a href="series.html" class="opciones">SERIES</a></li>
+          <li>
+            <button class="uk-button uk-button-default opciones" type="button">GÉNEROS</button>
+              <div uk-dropdown="pos: bottom-justify">
+                <ul class="uk-nav uk-dropdown-nav" id="dropdown-generos">
+                </ul>
+              </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="cuenta_usuario">
+        <ul id="opciones_usuario">
+          <li><a href="perfil.html">Iniciar sesión</a></li>
+          <li><a href="registrarse.html">Registrarse</a></li>
+        </ul>
+      </div>
+      <form action="resultadosbusq.html" method="GET" class=buscar>
+        <input type="text" name="palabra_de_busqueda" class="buscador" minlength="3" required>
+        <button type="submit" class="boton">Buscar</button>
+        <li class="busq_avanzada"><a href="avanzado.html">Busqueda avanzada</a></li>
+      </form>
+    </header>
 
-<body>
-  <header>
-    <a href="home.html"><img class="logo" src="img/logo.png" alt="logotipo" width="100px"></a>
-    <nav class="main-nav">
-      <ul class="series-generos">
-        <li> <a href="series.html" class="opciones">SERIES</a></li>
-        <li>
-          <button class="uk-button uk-button-default opciones" type="button">GÉNEROS</button>
-            <div uk-dropdown="pos: bottom-justify">
-              <ul class="uk-nav uk-dropdown-nav" id="dropdown-generos">
-              </ul>
-            </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="cuenta_usuario">
-      <ul id="opciones_usuario">
-        <li><a href="perfil.html">Iniciar sesión</a></li>
-        <li><a href="registrarse.html">Registrarse</a></li>
-      </ul>
-    </div>
-    <form action="resultadosbusq.html" method="GET" class=buscar>
-  		<input type="text" name="palabra_de_busqueda" class="buscador" minlength="3" required>
-  		<button type="submit" class="boton">Buscar</button>
-      <li class="busq_avanzada"><a href="avanzado.html">Busqueda avanzada</a></button>
-  	</form>
-  </header>
-
-  <main>
+    <main>
     <div class="uk-section">
       <div class="uk-container">
+        <section>
+          <div class="">
+            <p>
+              <label for="nombre" >Nombre</label>
+              <input id="nombre"type="text" name="usuario" value="">
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input id="email"type="email" name="correo" value="" required>
+            </p>
+            <p>
+              <label for="contraseña">Contraseña</label>
+              <input id="contraseña" type="password" name="contraseña" value="" required>
+            </p>
+            <p>
+              <label for="Pais">Pais de origen</label>
+              <select class="" name= "Origen">
+                <option disabled selected> Paìs</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="ee.uu">Estados Unidos</option>
+                <option value="otro"> Otro</option>
+              </select>
+              <legend class="info">Desea recibir Informacion?</legend>
+                <label for="si"><input id="si" type="radio" name="recibirInfo" value="">SI</label>
+                <label for="no"><input id="no" type="radio" name="recibirInfo" value="">NO</label>
 
-      </div>
+          <p>
+            <textarea name="text" rows="8" cols="80">Dejanos un Comentario :) </textarea>
+          </p>
+          <button type="submit" name="button">Enviar</button>
     </div>
+  </section>
+  </div>
+  </div>
   </main>
 
   <footer>
@@ -79,18 +109,13 @@
       <img src="img/tmdb.png" class="thdb"alt="">
     </section>
   </footer>
-
-</body>
-
-
-<script src="https://kit.fontawesome.com/e32b1dc814.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  </body>
+  <script src="https://kit.fontawesome.com/e32b1dc814.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
-<script type="text/javascript" src="js/generos.js"></script>
-<script type="text/javascript" src="js/dropdown.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
 </html>
