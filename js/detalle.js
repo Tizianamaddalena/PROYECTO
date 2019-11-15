@@ -27,11 +27,17 @@ window.addEventListener('load',function(){
 
      detalleSerie.innerHTML = `
         <h2>${titulo}</h2>
-        <img src="${urlImg}" width="250">
-        <p>Lenguaje original: ${lenguaje} </p>
-        <p>Fecha de estreno: ${fechaEstreno} </p>
-        <p>Género: ${listaGenero}</p>
-        <p>${descripcion}</p>
+        <div id="foto_info">
+        <section class="info_serie">
+          <img src="${urlImg}" width="250">
+        </section>
+        <section class="info_serie">
+          <p>Lenguaje original: ${lenguaje} </p>
+          <p>Fecha de estreno: ${fechaEstreno} </p>
+          <p>Género: ${listaGenero}</p>
+          <p>${descripcion}</p>
+        </section>
+        </div>
      `;
 
   })
