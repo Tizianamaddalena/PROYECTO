@@ -16,14 +16,24 @@ list-style: none;
 
 .buscador {
   border-radius: 18px;
+  width: 180px;
+  padding: 5px;
+  font-size: 12px;
+  font-family: 'Fjalla One', sans-serif;
 }
+
+.buscador:focus {
+  border: solid 1px #dc3545;
+}
+
 .boton {
   font-family: 'Fjalla One', sans-serif;
   background-color: rgba(204, 67, 140, 0);
   padding: 5px;
   color: #dc3545;
   border: outset 2px rgba(139, 137, 90, 0);
-
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .boton:hover {
   background-color:black;
@@ -75,4 +85,23 @@ margin-top:-115px;
 .uk-dropdown-nav a:hover {
   text-decoration: underline;
   color: black;
+}
+
+.cuenta_usuario{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: flex;
+}
+
+#opciones_usuario a{
+  color: #dc3545;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+
+#opciones_usuario a:hover{
+  color: white;
+  text-decoration: underline;
 }

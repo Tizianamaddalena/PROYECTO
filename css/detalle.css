@@ -2,11 +2,10 @@ main {
   min-height: 100vh;
 }
 
-
 .uk-container {
   background-color: black;
   opacity: 0.9;
-  padding: 20px;
+  padding: 30px;
   padding-bottom: 40px;
   }
 
@@ -70,3 +69,21 @@ button:hover {
 .uk-slider {
   width: 100%;
 }
+
+#foto_info{
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.info_serie {
+  flex-wrap: wrap;
+}
+
+.info_serie p {
+  margin-left: 30px;
+}
+
+.info_serie img {
+  max-width: none;
+}  /* tuve que poner esto para que no me achicara el poster de la serie */
