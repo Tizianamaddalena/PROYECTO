@@ -96,6 +96,9 @@ window.addEventListener('load',function(){
         <p>Por ${autor}</p>
         `
       }//}
+      else {
+        comentarios.innerText = "<p>Se el primero en dejar un comentario!</p>"
+      }
 
 
     })
