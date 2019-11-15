@@ -1,8 +1,8 @@
 window.addEventListener('load', function () {
-var urlParams = new URLSearchParams(location.search);
+var urlParams = new URLSearchParams(window.location.search);
 
 var idGenero = urlParams.get('genre_ids');
-var nombreGenero = document.querySelector('#titulo-genero')
+var nombreGenero = urlParams.get('name')
 
 var api_key = "60be6317b0012697cb25d6ce427de920"
 
