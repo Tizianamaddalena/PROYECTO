@@ -29,3 +29,22 @@ li {
 main{
   text-align: center;
 }
+
+.resultados {
+  display: flex;
+  flex-wrap: wrap;
+}
+a{
+  color: #dc3545;
+  font-family: 'Fjalla One', sans-serif;
+}
+a:hover {
+  color: #dc3545;
+  text-decoration: none
+}
+h4 {
+font-family: 'Fjalla One', sans-serif;
+color: white;
+font-size: 20px;
+
+}

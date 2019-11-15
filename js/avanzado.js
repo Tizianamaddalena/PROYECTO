@@ -83,7 +83,8 @@ window.addEventListener('load',function(){
 
           contenidoHTML += `
             <li>
-              <h2>${arrayDeResultados[i].name}</h2>
+              <h3>${arrayDeResultados[i].name}</h3>
+              <h4>${arrayDeResultados[i].overview}</h4>
               <img src="${imgURL}" width="20%">
               <a href="detalle.html?id=${arrayDeResultados[i].id}">VER MAS</a>
             <li>
