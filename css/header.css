@@ -105,3 +105,21 @@ margin-top:-115px;
   color: white;
   text-decoration: underline;
 }
+
+.busq_avanzada a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+
+}
+
+.busq_avanzada {
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+
+.busq_avanzada a:hover {
+  text-decoration: underline;s
+}

@@ -6,7 +6,7 @@ window.addEventListener('load',function(){
   console.log(id);
 // FUNCION DE INFORMACION
   var api_key = "60be6317b0012697cb25d6ce427de920"
-  fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key="+api_key+"&language=es-AR")
+  fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key="+api_key+"&language=en-US")
   .then(function(response) {
    return response.json()
   })
@@ -74,9 +74,34 @@ window.addEventListener('load',function(){
      console.log("Error: " + error);
     })
 
+    //  COMENTARIOS
+    var api_key = "60be6317b0012697cb25d6ce427de920"
+    var urlParams = new URLSearchParams(location.search);
+    var id = urlParams.get('id');
+    var reviewSerie = "https://api.themoviedb.org/3/tv/"+ id +"/reviews?api_key="+api_key+"&language=en-US&page=1"
+
+    fetch(reviewSerie)
+    .then(function(response){
+      return response.json()
+    })
+    .then(function(respuesta){
+      console.log(respuesta);
+
+      if (respuesta.results.length > 0) {
+        var comentarios = document.querySelector("#reviews")
+        var contenido = respuesta.results.content
+        comentarios.innerHTML = `
+        <h2>Opiniones de otros usuarios</h2>
+        <p>${contenido}</p>
+        `
+      }
+
+
+    })
+
     // FUNCION DE RECOMENDACION
 
-   var apiRecomendaciones = "https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key=60be6317b0012697cb25d6ce427de920&language=es-ARG&page=1"
+   var apiRecomendaciones = "https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key=60be6317b0012697cb25d6ce427de920&language=en-US&page=1"
 
    fetch(apiRecomendaciones)
      .then(function(response) {
