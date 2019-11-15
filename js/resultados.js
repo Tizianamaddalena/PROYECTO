@@ -3,6 +3,9 @@ var parametrosURL = new URLSearchParams(location.search);
 var palabraBusqueda = parametrosURL.get("palabra_de_busqueda");
 
 console.log(palabraBusqueda);
+ //Insertamos en titulo la palabra buscada
+ document.querySelector("#titulo-resultados").innerText += " " + palabraBusqueda
+
 
 var api_key = "60be6317b0012697cb25d6ce427de920";
 
@@ -39,7 +42,8 @@ fetch("https://api.themoviedb.org/3/search/tv?api_key=" + api_key + "&language=e
       ul.innerHTML += serie
     }
     } else {
-      alert("No se encontraron series con ese Nombre");
+        document.querySelector("#titulo-resultados").innerText = "No se encontraron series para: "  +palabraBusqueda
+      //alert("No se encontraron series con ese Nombre");
     }
   })
   .catch(function (error) {

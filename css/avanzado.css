@@ -2,15 +2,6 @@ main {
   min-height: 100vh;
 }
 
-.formulario {
-}
-.formulario-interior {
-  background-color: black;
-  opacity: 0.9;
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-
 
 }
 label {
@@ -20,4 +11,9 @@ label {
 select {
   border-radius: 2px;
   font-family: 'Fjalla One', sans-serif;
+}
+li {
+  color: #dc3545;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
 }
