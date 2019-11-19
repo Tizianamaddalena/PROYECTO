@@ -23,6 +23,17 @@ li {
   list-style: none;
    font-family: 'Fjalla One', sans-serif;
 }
+#toptop {
+   font-family: 'Fjalla One', sans-serif;
+   text-decoration: none;
+   background-color: black;
+   color: #dc3545;
+   padding: 3px;
+   margin: 60px;
+   border-radius: 4px;
+   font-size: 50px;
+  
+}
 
 /* INICIO MEDIA QUERIES CEL - TABLET - SMARTPHONE */
 
