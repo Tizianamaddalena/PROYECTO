@@ -8,16 +8,16 @@
   font-family: 'Fjalla One', sans-serif;
   bottom: 50px;
   margin: 20px;
-  
+
 }
 
 .uk-slider-items h2:hover {
   text-decoration: underline;
 }
 
-.uk-active img {
-  z-index: 0;
-  position: absolute;
+.uk-container img {
+  width: 95%;
+  height: 90%;
 }
 
 .uk-slider-items img:hover{
@@ -34,9 +34,29 @@ text-decoration: none;
 font-family: 'Fjalla One', sans-serif;
 font-size: 25px;
 text-align: center;
+padding-bottom: 10px;
+padding-top: 20px;
 }
 
 .uk-container div{
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+.boton_2 {
+  font-family: 'Fjalla One', sans-serif;
+  background-color: rgba(204, 67, 140, 0);
+  padding: 5px;
+  color: #dc3545;
+  border: outset 2px rgba(139, 137, 90, 0);
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+.boton_2:hover {
+  background-color:black;
+  cursor: pointer;
+  border: outset 2px #dc3545;
+  padding: 5px;
+  color: white;
 }
