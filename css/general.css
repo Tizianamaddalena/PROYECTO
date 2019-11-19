@@ -81,7 +81,24 @@ li {
   .main-nav > ul {
     display: block;
 }
+#imagen-busq{
+  width: 308px
+}
+.titulo {
+  font-size: 21px
+}
+.descripcion {
+  font-size: 13px
+}
+#serie_recomm{
+  border: double 3px #dc3545;
+  justify-content: space-around;
+  margin: 20px;
+  display: flex;
+  width: auto;
+  align-items: stretch;
 
+}
 
 }
 /* FIN MEDIA QUERIES CEL - TABLET - SMARTPHONE */
