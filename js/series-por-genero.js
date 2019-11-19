@@ -1,26 +1,30 @@
-window.addEventListener('load', function () {
-var urlParams = new URLSearchParams(window.location.search);
 
-var idGenero = urlParams.get('genre_ids');
-var nombreGenero = urlParams.get('name')
+window.addEventListener('load', function () {
+
+var listaSeries = document.querySelector('#lista-series');
 
 var api_key = "60be6317b0012697cb25d6ce427de920"
+var urlParams = new URLSearchParams(location.search);
+var id = urlParams.get('genre_id')
 
-fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false")
+fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&sort_by=popularity.desc&page=1&with_genres="+id)
 .then(function(response){
   return response.json()
 })
-.then(function(information){
-  var generos = "";
-  var titulo = ""
-  for (var i =0; i < information.results.length; i++) {
-    generos = information.results.genre_ids
-    titulo= information.results.name
-console.log(information);
+.then(function(informacion){
+  var generos = informacion.genres;
+  for (var i = 0; i <= informacion.length; i++) {
+
+
+
 }
 })
+
 .catch(function(error) {
  console.log("Error: " + error);
 })
 })
 //pagina de generos por series
+
+//display none;
+//display block (boton onclik)
