@@ -87,7 +87,7 @@ window.addEventListener('load',function(){
 
       if (respuesta.results.length > 0) {
         var comentarios = document.querySelector("#reviews")
-        //for (var i = 0; i < results.length; i++) {
+        //for (var i = 0; i > results.length; i++) {
         var contenido = respuesta.results[0].content
         var autor = respuesta.results[0].author
         comentarios.innerHTML += `
@@ -126,10 +126,7 @@ window.addEventListener('load',function(){
 
          //
 
-
        }
-
-
      })
 
      .catch(function(error) {
