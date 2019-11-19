@@ -1,6 +1,6 @@
-form label,
-form input,
-form legend{
+#registrarse label,
+#registrarse input,
+#registrarse legend{
   color: #dc3545;
   font-family: 'Fjalla One', sans-serif;
   padding: 5px;
@@ -9,7 +9,7 @@ form legend{
 .enviar {
   background-color: rgba(204, 67, 140, 0);
   padding: 5px;
-  color: #dc3545;
+  color: white;
   border: outset 2px rgba(139, 137, 90, 0);
   font-size: 20px;
   text-transform: uppercase;
@@ -22,8 +22,8 @@ form legend{
     padding: 5px;
   }
 
-input,
-select{
+#registrarse input,
+#registrarse select{
   border-radius: 10px;
   font-family: 'Fjalla One', sans-serif;
   width: 30%;
@@ -42,8 +42,4 @@ label {
 #cuenta_existente a{
   color: white;
   padding-left: 8px;
-}
-
-#pais {
-  font-size: 13px;
 }

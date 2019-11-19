@@ -20,7 +20,7 @@ input{
 .enviar {
   background-color: rgba(204, 67, 140, 0);
   padding: 5px;
-  color: #dc3545;
+  color: white;
   border: outset 2px rgba(139, 137, 90, 0);
   font-size: 20px;
   text-transform: uppercase;
