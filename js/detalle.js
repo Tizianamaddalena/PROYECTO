@@ -141,10 +141,7 @@ window.addEventListener('load',function(){
       console.log("Error: " + error);
      })
 
-     var btn = document.querySelector("#abracadabra")
-     btn.onclick = function() {
 
-     }
 
 // FUNCION QUE APAREZCA RECOMENDACIONES
 
@@ -158,8 +155,32 @@ window.onload = function(){/*hace que se cargue la función lo que predetermina 
 muestra_oculta('contenido');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
 }
 
+// FUNCION EPISODIOS
 
+var urlParams = new URLSearchParams(location.search);
+var id = urlParams.get('tv_id');
+var temporada = urlParams.get('season_number')
+var episodios = urlParams.get('episode_number');
 
+fetch("https://api.themoviedb.org/3/tv/"+id+"/season/"+temporada+"/episode/"+episodios+"?api_key=60be6317b0012697cb25d6ce427de920&language=en-US")
+.then(function(response){
+  return response.json()
+})
+.then(function(results){
+  console.log(results);
+  var episodiosPorSerie = document.querySelector("#episodios")
+  var numEpisodio = results.episode_number
+  var resumenEpisodio = results.overview
+  episodiosPorSerie.innerHTML +=
+  `<a class="uk-accordion-title" href="#">Episodio ${numEpisodio}</a>
+  <div class="uk-accordion-content">
+    <p>${resumenEpisodio}</p>
+  </div>
+  `
+})
+.catch(function(error){
+  console.log("Error: " + error);
+})
 
 
 })
