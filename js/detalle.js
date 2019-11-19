@@ -62,7 +62,7 @@ window.addEventListener('load',function(){
       var iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + information.results[0].key + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
       var urlVideo = 'https://www.youtube.com/watch?v=' + information.results[0].key;
       contTrailer.innerHTML += `
-      <section>${iframe}</section>
+      <section id="videoTrailer">${iframe}</section>
       <a href="${urlVideo}"' target='_blank'+">VER TRAILER</a>
       `
 
@@ -97,7 +97,14 @@ window.addEventListener('load',function(){
         `
       }//}
       else {
-        comentarios.innerText = "<p>Se el primero en dejar un comentario!</p>"
+        var comentarios = document.querySelector("#reviews")
+        comentarios.innerHTML = `
+        <form>
+        <label id="comentario_1"> ¡Se el primero en dejar un comentario! </label>
+          <textarea id="primer_comentario"></textarea>
+        </form>
+        `
+
       }
 
 
@@ -118,7 +125,7 @@ window.addEventListener('load',function(){
        for (var i = 10; i < information.results.length; i++) {
          var id =  information.results[i].id
          opciones= "https://image.tmdb.org/t/p/original" + information.results[i].poster_path
-         console.log(opciones);
+         console.log(opciones)
          reco.innerHTML +=
          `<a href="detalle.html?id=${id}">
          <img class= "recomm" src="${opciones}" width="250">
@@ -134,11 +141,12 @@ window.addEventListener('load',function(){
      })
 
      var btn = document.querySelector("#abracadabra")
-     btn.onclik = function() {
+     btn.onclick = function() {
 
      }
 
 // FUNCION QUE APAREZCA RECOMENDACIONES
+
 
 
 
