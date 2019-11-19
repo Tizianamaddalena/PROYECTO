@@ -41,26 +41,46 @@ main{
 }
 
 #serie_recomm {
-  display: flex;
-  justify-content: space-around;
+border: double 3px #dc3545;
+justify-content: space-around;
+margin: 20px;
+display: flex;
+width: auto;
+align-items: center;
+
+
 }
 
 #serie_recomm section {
   flex-wrap: wrap;
   width: 50%;
+  padding: 20px
+
 }
 
 a{
   color: #dc3545;
   font-family: 'Fjalla One', sans-serif;
+  font-size: 30px
 }
 a:hover {
   color: #dc3545;
-  text-decoration: none
+  text-decoration: underline;
 }
 
-h4 {
+p {
 font-family: 'Fjalla One', sans-serif;
 color: white;
-font-size: 20px;
+font-size: 15px;
+align-self: center;
+}
+h3 {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+
+}
+.resultados ul {
+  margin: auto;
 }
