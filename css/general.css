@@ -14,7 +14,7 @@ body {
 
 
 .uk-container {
-  background-color: black;
+  background-color: black ;
   opacity: 0.9;
   padding: 30px 15px;
 }
@@ -32,6 +32,7 @@ li {
    margin-left: 5px;
    border-radius: 4px;
    font-size: 30px;
+}
 
 
 }
@@ -42,7 +43,7 @@ li {
   }
 
 /* TABLET */
-  @media (min-width:451px) and (max-width:768px) {
+ @media (min-width:451px) and (max-width:768px) {
   #seguinos, #nosotros, #informacion {
     text-align: center;
     margin: 4px;
@@ -50,15 +51,15 @@ li {
 }
 
 header {
-    background-color: white
+    background-color: rgb(246, 161, 62)
 }
 .uk-container{
-    background-color: white;
+    background-color: rgb(246, 161, 62);
     opacity: 0.9;
     padding: 30px 15px;
   }
 footer {
-    background-color: white
+    background-color:rgb(246, 161, 62)
 }
 .footer-details:hover {
   color: black
@@ -99,9 +100,15 @@ footer {
 .nombres{
   color:#dc3545
 }
-*/
+.buscador {
+  background: #dc3545;
+}
+#videoTrailer{
+  display: none;
+}
+}
 /* MOBILE */
-@media  only screen and (max-width:450px){
+@media  only screen  and (max-width:450px){
 
   .cuenta_usuario {
     position: absolute;
@@ -208,5 +215,8 @@ footer {
           color:black;
         }
 
+        .buscador {
+          background: #dc3545;
+        }
 }
 /* FIN MEDIA QUERIES CEL - TABLET - SMARTPHONE */
