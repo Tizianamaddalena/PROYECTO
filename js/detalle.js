@@ -21,8 +21,9 @@ window.addEventListener('load',function(){
      var fechaEstreno = information.first_air_date
      var genero= information.genres
      var listaGenero = ""
+
      for (var i = 0; i < genero.length; i++) {
-       listaGenero+= ' <a href="generos.html" >' + genero[i].name + '</a> ,'
+       listaGenero+= ' <a href="series-por-genero.html" >' + genero[i].name + '</a> ,'
      }
      detalleSerie.innerHTML = `
         <h2>${titulo}</h2>
@@ -42,7 +43,7 @@ window.addEventListener('load',function(){
     var temporadasSerie = document.querySelector("#temporadas");
     var temporadas = information.seasons
     var listaTemporadas = ""
-    var imgTemporadas = information.seasons.poster_path
+
 
     for (var i = 0; i < temporadas.length; i++) {
      listaTemporadas+= '<h2>' + temporadas[i].name + '</h2>'
