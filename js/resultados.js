@@ -6,11 +6,6 @@ console.log(palabraBusqueda);
  //Insertamos en titulo la palabra buscada
  document.querySelector("#titulo-resultados").innerText += " " + palabraBusqueda
 
-//Palabra de busqueda pre-cargada en buscador de header y pag principal
-
-  //var placeholderBusq = document.getElementsByClassName('.buscador')
-  //placeholderBusq.placeholder += " " + palabraBusqueda
-
 
 var api_key = "60be6317b0012697cb25d6ce427de920";
 

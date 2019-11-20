@@ -24,7 +24,6 @@ window.addEventListener('load',function(){
      for (var i = 0; i < genero.length; i++) {
        listaGenero+= ' <a href="generos.html" >' + genero[i].name + '</a> ,'
      }
-
      detalleSerie.innerHTML = `
         <h2>${titulo}</h2>
         <div id="foto_info">
@@ -38,7 +37,22 @@ window.addEventListener('load',function(){
           <p>${descripcion}</p>
         </section>
         </div>
-     `;
+        `
+
+    var temporadasSerie = document.querySelector("#temporadas");
+    var temporadas = information.seasons
+    var listaTemporadas = ""
+    var imgTemporadas = information.seasons.poster_path
+
+    for (var i = 0; i < temporadas.length; i++) {
+     listaTemporadas+= '<h2>' + temporadas[i].name + '</h2>'
+   }
+   temporadasSerie.innerHTML = `
+   <a class="uk-accordion-title" href="#">Temporada </a>
+   <div class="uk-accordion-content">
+      <li>${listaTemporadas}</li>
+   </div>
+   `
 
   })
 
@@ -86,16 +100,20 @@ window.addEventListener('load',function(){
       console.log(respuesta);
 
       if (respuesta.results.length > 0) {
+
         var comentarios = document.querySelector("#reviews")
-        //for (var i = 0; i > results.length; i++) {
-        var contenido = respuesta.results[0].content
-        var autor = respuesta.results[0].author
+
+        for (var i = 0; i < respuesta.results.length; i++) {
+
+        var contenido = respuesta.results[i].content
+        var autor = respuesta.results[i].author
         comentarios.innerHTML += `
         <h3>Opiniones de otros usuarios</h3>
         <p> "${contenido}"</p>
         <p>Por ${autor}</p>
         `
-      }//}
+        }
+      }
       else {
         var comentarios = document.querySelector("#reviews")
         comentarios.innerHTML = `
@@ -155,32 +173,7 @@ window.onload = function(){/*hace que se cargue la función lo que predetermina 
 muestra_oculta('contenido');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
 }
 
-// FUNCION EPISODIOS
 
-var urlParams = new URLSearchParams(location.search);
-var id = urlParams.get('tv_id');
-var temporada = urlParams.get('season_number')
-var episodios = urlParams.get('episode_number');
-
-fetch("https://api.themoviedb.org/3/tv/"+id+"/season/"+temporada+"/episode/"+episodios+"?api_key=60be6317b0012697cb25d6ce427de920&language=en-US")
-.then(function(response){
-  return response.json()
-})
-.then(function(results){
-  console.log(results);
-  var episodiosPorSerie = document.querySelector("#episodios")
-  var numEpisodio = results.episode_number
-  var resumenEpisodio = results.overview
-  episodiosPorSerie.innerHTML +=
-  `<a class="uk-accordion-title" href="#">Episodio ${numEpisodio}</a>
-  <div class="uk-accordion-content">
-    <p>${resumenEpisodio}</p>
-  </div>
-  `
-})
-.catch(function(error){
-  console.log("Error: " + error);
-})
 
 
 })
