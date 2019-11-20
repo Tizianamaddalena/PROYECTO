@@ -84,11 +84,11 @@ window.addEventListener('load',function(){
           contenidoHTML += `
             <div id="serie_recomm">
             <section id="img_titulo">
-              <h3>${arrayDeResultados[i].name}</h3>
-              <img src="${imgURL}" width="40%">
+              <h3 class="titulo">${arrayDeResultados[i].name}</h3>
+              <img src="${imgURL}" width="40%" id="imagen-busq">
             </section>
             <section id="resumen">
-              <p>${arrayDeResultados[i].overview}</p>
+              <p class="descripcion">${arrayDeResultados[i].overview}</p>
               <a href="detalle.html?id=${arrayDeResultados[i].id}">VER MÁS</a>
             </section>
             </div>
