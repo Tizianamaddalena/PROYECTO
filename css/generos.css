@@ -10,12 +10,26 @@ main {
 }
 #titulo-genero{
   font-size: 30px;
-  color: #dc4535;
+  color: #dc3545;
   font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
 }
-.lista-series {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: auto;
+
+#contenedor-carrusel {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.serieGen{
+  width: 150px;
+  justify-content: space-around;
+}
+
+.uk-container img {
+  width: 95%;
+  height: 90%;
+}
+
+.uk-container img:hover{
+  opacity: 0.6;
 }

@@ -12,31 +12,27 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&sort_by=popu
   console.log(datos.results);
   var resultados = datos.results;
   var titulo = ""
-  var posterURL = ""
-  var urlFija = "https://image.tmdb.org/t/p/original"
   var listado = document.querySelector("#lista-series")
+
 
   if (resultados.length > 0) {
     for (var i = 0; i < datos.results.length; i++) {
       titulo = resultados[i].name
       var id = resultados[i].id
+      var posterURL = "https://image.tmdb.org/t/p/original"+resultados[i].poster_path
+
 
     listado.innerHTML += `
-    <li><a class="tituloPelicula" href='detalle.html?id=${id}'>${titulo}</a></li>
+    <a href='detalle.html?id=${id}'>
+    <img class="serieGen" src="${posterURL}">
+    </a>
     `
   if (resultados[i].poster_path === null) {
       listado.innerHTML += `
     <h2>${titulo}</h2>
     <img src='img/no-disponible.png' width="100">
       `
-    } else {
-      posterURL = urlFija + resultados[i].poster_path;
-
-      listado.innerHTML += `
-      <a href='detalle.html?id=${id}'><img src='${posterURL}' width="100"></a>
-      `
     }
-
     }
   }
 })
@@ -45,7 +41,6 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&sort_by=popu
 })
 
 
-//pagina de generos por series
 
 //display none;
 //display block (boton onclik)
