@@ -20,7 +20,7 @@ list-style: none;
   padding: 5px;
   font-size: 12px;
   font-family: 'Fjalla One', sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .boton {
@@ -118,5 +118,5 @@ margin-top:-115px;
 }
 
 .busq_avanzada a:hover {
-  text-decoration: underline;s
+  text-decoration: underline;
 }

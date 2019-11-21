@@ -72,16 +72,18 @@ window.addEventListener('load',function(){
     })
     .then(function(information) {
       console.log("=======");
-      console.log(information.results[0]);
+      console.log(information.results[i]);
       var contTrailer = document.querySelector("#trailer");
 
-      var iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + information.results[0].key + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-      var urlVideo = 'https://www.youtube.com/watch?v=' + information.results[0].key;
+      for (var i = 0; i < information.results.length; i++) {
+
+      var iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + information.results[i].key + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      var urlVideo = 'https://www.youtube.com/watch?v=' + information.results[i].key;
       contTrailer.innerHTML += `
       <section id="videoTrailer">${iframe}</section>
       <a href="${urlVideo}"' target='_blank'+">VER TRAILER</a>
       `
-
+      }
     })
 
     .catch(function(error) {
@@ -164,18 +166,6 @@ window.addEventListener('load',function(){
 
 
 // FUNCION QUE APAREZCA RECOMENDACIONES
-
-function mostrar(id){
-if (document.getElementById){ //se obtiene el id
-var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
-el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
-}
-}
-window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
-muestra_oculta('contenido');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
-}
-
-
 
 
 })

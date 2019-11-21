@@ -136,3 +136,7 @@ button:hover {
   color: #dc3545;
   font-size: 20px;
 }
+
+#contenedor-carrusel {
+  display: none;
+}
