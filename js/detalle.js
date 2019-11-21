@@ -51,20 +51,18 @@ window.addEventListener('load',function(){
 
 
     for (var i = 0; i < temporadas.length; i++) {
-     listaTemporadas+=  temporadas[i].name
-     fechaEstrenoTemp += temporadas[i].air_date
-     cantEpisodios += temporadas[i].episode_count
-console.log(listaTemporadas);
+     listaTemporadas=  temporadas[i].name
+     fechaEstrenoTemp = temporadas[i].air_date
+     cantEpisodios = temporadas[i].episode_count
+    console.log(listaTemporadas);
+    temporadasSerie.innerHTML += `<li><a class="uk-accordion-title" href="#"> ${listaTemporadas}</a>
+    <div class="uk-accordion-content">
+    <p>Fecha de estreno: ${fechaEstrenoTemp}</p>
+    <p>Cantidad de episodios: ${cantEpisodios}</p>
+    </div>
+    </li>
+    `
    }
-   temporadasSerie.innerHTML = `
-   <h3 class="tempo">Temporadas</h3>
-   <a class="uk-accordion-title" href="#"> ${listaTemporadas}</a>
-   <div class="uk-accordion-content">
-   <p>hola</p>
-   <p>${fechaEstrenoTemp}</p>
-   <p>${cantEpisodios}</p>
-   </div>
-   `
 
   })
 
@@ -198,9 +196,8 @@ console.log(listaTemporadas);
       console.log("Error: " + error);
      })
 
+//FUNCION DE FAVORITOS
 
-
-// FUNCION QUE APAREZCA RECOMENDACIONES
 
 
 })

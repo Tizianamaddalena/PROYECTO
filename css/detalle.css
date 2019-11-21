@@ -142,8 +142,9 @@ button:hover {
   width: 100%;
 }
 
-.tempo {
+.temp {
   font-family: 'Fjalla One', sans-serif;
-  color: #dc3545;
+  color: white;
   font-size: 25px;
+  border: outset 3px white
 }
