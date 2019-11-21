@@ -137,7 +137,7 @@ window.addEventListener('load',function(){
         var comentarios = document.querySelector("#reviews")
         comentarios.innerHTML = `
         <form>
-        <label id="comentario_1"> ¡Se el primero en dejar un comentario! </label>
+        <label id="comentario_1"> ¡Sé el primero en dejar un comentario! </label>
           <textarea id="primer_comentario"></textarea>
           <button type="button" name="button" id="but_comment">Enviar</button>
 
