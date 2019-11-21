@@ -1,3 +1,5 @@
+window.addEventListener('load', function(){
+
 // 1- leo storage
 var recuperacionStorage = localStorage.getItem("seriesFavoritas");
 
@@ -15,7 +17,8 @@ if (recuperacionStorage == null) {
   if (seriesFavoritas.includes(id)) {
     document.querySelector("#favoritos").innerHTML = "Eliminar de favoritos";
   }
-  document.querySelector("favoritos").onclick = function() {
+  document.querySelector("#favoritos").onclick = function() {
+    console.log("onclick");
       if (seriesFavoritas.includes(id)) {
         //lo saco
         var index = seriesFavoritas.indexOf(id);
@@ -35,5 +38,4 @@ if (recuperacionStorage == null) {
 
 
 
-  }
-}
+})
