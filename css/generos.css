@@ -17,4 +17,5 @@ main {
 .lista-series {
   display: flex;
   flex-wrap: wrap;
+  max-width: auto;
 }
