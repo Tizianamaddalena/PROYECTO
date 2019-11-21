@@ -18,9 +18,9 @@ fetch("https://api.themoviedb.org/3/tv/airing_today?api_key="+api_key+"&language
     console.log(information.results[i].poster_path);
     posterURL = urlFija + information.results[i].poster_path
 
-    serie = '<li>'
-    serie = '<a href="detalle.html?id=' + id + '">'
-    serie +=   '<img src="'+posterURL+'" alt="">'
+    serie = '<li  class="uk-animation-toggle" tabindex="0" >'
+    serie += '<a href="detalle.html?id=' + id + '">'
+    serie +=   '<img class="uk-animation-fade" src="'+posterURL+'" alt="">'
     serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
     serie += '</a>'
     serie += '</li>'

@@ -18,9 +18,9 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key="+api_key+"&language=es-A
     console.log(information.results[i].poster_path);
     posterURL = urlFija + information.results[i].poster_path
 
-    serie = '<li>'
+    serie = '<li  class="uk-animation-toggle" tabindex="0" >'
     serie += '<a href="detalle.html?id=' + id + '">'
-    serie +=   '<img src="'+posterURL+'" alt="">'
+    serie +=   '<img class="uk-animation-fade" src="'+posterURL+'" alt="">'
     serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
     serie += '</a>'
     serie += '</li>'
