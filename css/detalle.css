@@ -59,6 +59,7 @@ button:hover {
   border: solid 2px #dc3545;
   color: white;
   padding: 5px;
+  cursor: pointer;
 }
 
 #videoTrailer {
@@ -139,4 +140,5 @@ button:hover {
 
 #contenedor-carrusel {
   display: none;
+
 }
