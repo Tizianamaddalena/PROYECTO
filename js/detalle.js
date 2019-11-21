@@ -23,7 +23,7 @@ window.addEventListener('load',function(){
      var listaGenero = ""
 
      for (var i = 0; i < genero.length; i++) {
-       listaGenero+= ' <a href="series-por-genero.html" >' + genero[i].name + '</a> ,'
+       listaGenero+= ' <a href="series-por-genero.html?genero='+ genero[i].id +'" >' + genero[i].name + '</a> ,'
      }
      detalleSerie.innerHTML = `
         <h2>${titulo}</h2>
@@ -35,7 +35,7 @@ window.addEventListener('load',function(){
           <p>Lenguaje original: ${lenguaje} </p>
           <p>Fecha de estreno: ${fechaEstreno} </p>
           <p>Género: ${listaGenero}</p>
-          
+
           <p>${descripcion}</p>
         </section>
         </div>
