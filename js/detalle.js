@@ -34,6 +34,7 @@ window.addEventListener('load',function(){
           <p>Lenguaje original: ${lenguaje} </p>
           <p>Fecha de estreno: ${fechaEstreno} </p>
           <p>Género: ${listaGenero}</p>
+          
           <p>${descripcion}</p>
         </section>
         </div>
