@@ -29,7 +29,7 @@ window.addEventListener('load',function(){
         <h2>${titulo}</h2>
         <div id="foto_info">
         <section class="info_serie">
-          <img src="${urlImg}" width="250">
+          <img  src="${urlImg}" width="250">
         </section>
         <section class="info_serie">
           <p>Lenguaje original: ${lenguaje} </p>
