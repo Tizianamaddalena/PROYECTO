@@ -39,20 +39,30 @@ window.addEventListener('load',function(){
           <p>${descripcion}</p>
         </section>
         </div>
-        `
 
-    var temporadasSerie = document.querySelector("#temporadas");
-    var temporadas = information.seasons
+        `
+        // FUNCION TEMPORADAS
+
+    var temporadasSerie = document.querySelector(".temporadas");
+   var temporadas = information.seasons
     var listaTemporadas = ""
+    var fechaEstrenoTemp = ""
+    var cantEpisodios = ""
 
 
     for (var i = 0; i < temporadas.length; i++) {
-     listaTemporadas+= '<h2>' + temporadas[i].name + '</h2>'
+     listaTemporadas+=  temporadas[i].name
+     fechaEstrenoTemp += temporadas[i].air_date
+     cantEpisodios += temporadas[i].episode_count
+console.log(listaTemporadas);
    }
    temporadasSerie.innerHTML = `
-   <a class="uk-accordion-title" href="#">Temporada </a>
+   <h3 class="tempo">Temporadas</h3>
+   <a class="uk-accordion-title" href="#"> ${listaTemporadas}</a>
    <div class="uk-accordion-content">
-      <li>${listaTemporadas}</li>
+   <p>hola</p>
+   <p>${fechaEstrenoTemp}</p>
+   <p>${cantEpisodios}</p>
    </div>
    `
 

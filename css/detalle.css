@@ -141,3 +141,9 @@ button:hover {
 #videoTrailer {
   width: 100%;
 }
+
+.tempo {
+  font-family: 'Fjalla One', sans-serif;
+  color: #dc3545;
+  font-size: 25px;
+}
