@@ -17,23 +17,23 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&sort_by=popu
   var listado = document.querySelector("#lista-series")
 
   if (resultados.length > 0) {
-    for (var i = 0; i < resultados.length; i++) {
+    for (var i = 0; i < datos.results.length; i++) {
       titulo = resultados[i].name
       var id = resultados[i].id
 
-    listado.innerHTML = `
-    <li><a href='detalle.html?id=${id}'>${titulo}</a></li>
+    listado.innerHTML += `
+    <li><a class="tituloPelicula" href='detalle.html?id=${id}'>${titulo}</a></li>
     `
   if (resultados[i].poster_path === null) {
-      listado.innerHTML = `
+      listado.innerHTML += `
     <h2>${titulo}</h2>
-    <img src='img/no-disponible.png'>
+    <img src='img/no-disponible.png' width="100">
       `
     } else {
       posterURL = urlFija + resultados[i].poster_path;
 
       listado.innerHTML += `
-      <a href='detalle.html?id=${id}'><img src='${posterURL}'></a>
+      <a href='detalle.html?id=${id}'><img src='${posterURL}' width="100"></a>
       `
     }
 

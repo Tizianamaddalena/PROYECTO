@@ -1,3 +1,20 @@
 main {
   min-height: 100vh;
 }
+.tituloPelicula {
+  font-size: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+}
+#titulo-genero{
+  font-size: 30px;
+  color: #dc4535;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+}
+.lista-series {
+  display: flex;
+  flex-wrap: wrap;
+}
