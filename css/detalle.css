@@ -1,5 +1,5 @@
 main {
-  min-height: 100vh;
+  min-height: auto;
 }
 
 .uk-container {
@@ -138,7 +138,6 @@ button:hover {
   font-size: 20px;
 }
 
-#contenedor-carrusel {
-  display: none;
-
+#videoTrailer {
+  width: 100%;
 }

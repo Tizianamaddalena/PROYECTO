@@ -77,11 +77,18 @@ window.addEventListener('load',function(){
 
       for (var i = 0; i < information.results.length; i++) {
 
-      var iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + information.results[i].key + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      var iframe = '<iframe src="https://www.youtube.com/embed/' + information.results[i].key + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
       var urlVideo = 'https://www.youtube.com/watch?v=' + information.results[i].key;
+
       contTrailer.innerHTML += `
-      <section id="videoTrailer">${iframe}</section>
-      <a href="${urlVideo}"' target='_blank'+">VER TRAILER</a>
+      <div uk-slider= "autoplay: true" class="uk-position-relative uk-visible-toggle uk-light" id="contenedor-carrusel-1" tabindex="-1" uk-slider>
+      <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m" id="trailers">
+        <section id="videoTrailer">${iframe}</section>
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+      </div>
+
       `
       }
     })
