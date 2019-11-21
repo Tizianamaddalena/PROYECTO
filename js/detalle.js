@@ -23,7 +23,7 @@ window.addEventListener('load',function(){
      var listaGenero = ""
 
      for (var i = 0; i < genero.length; i++) {
-       listaGenero+= ' <a href="series-por-genero.html?genero='+ genero[i].id +'" >' + genero[i].name + '</a> ,'
+       listaGenero+= ' <a href="series-por-genero.html?genero='+ genero[i].id + '&name=' + genero[i].name + ' " >' + genero[i].name + '</a> ,'
      }
      detalleSerie.innerHTML = `
         <h2>${titulo}</h2>
