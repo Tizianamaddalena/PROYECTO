@@ -1,9 +1,11 @@
 
 var urlParams = new URLSearchParams(location.search);
 var idBuscado = urlParams.get('genero')
-
+var nombreGenero = urlParams.get('name')
 var api_key = "60be6317b0012697cb25d6ce427de920"
 
+//Inserto el genero buscado en el titulo
+document.querySelector("#titulo-genero").innerText += " "+ nombreGenero
 fetch("https://api.themoviedb.org/3/discover/tv?api_key="+api_key+"&sort_by=popularity.desc&page=1&with_genres="+idBuscado)
 .then(function(response){
   return response.json()
