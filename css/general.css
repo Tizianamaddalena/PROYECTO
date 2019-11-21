@@ -218,5 +218,9 @@ footer {
         .buscador {
           background: #dc3545;
         }
+
+        #seguinos, #nosotros{
+          display: none
+        }
 }
 /* FIN MEDIA QUERIES CEL - TABLET - SMARTPHONE */
