@@ -124,10 +124,17 @@ window.addEventListener('load',function(){
         <form>
         <label id="comentario_1"> ¡Se el primero en dejar un comentario! </label>
           <textarea id="primer_comentario"></textarea>
-          <button type="button" name="button">Enviar</button>
+          <button type="button" name="button" id="but_comment">Enviar</button>
+
         </form>
         `
+        var coment = document.querySelector("#primer_comentario")
+        var but = document.querySelector("#but_comment")
 
+          but.onclick= function (){
+          alert("Gracias por tu comentario");
+
+          }
       }
 
 
