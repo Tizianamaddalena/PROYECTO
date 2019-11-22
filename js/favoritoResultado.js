@@ -33,7 +33,7 @@ window.onload= function () {
          serie +=   '<div"><h2 class=""></h2></div>'
          serie += '</a>'
          serie += '</li>'
-         detalleSerie.innerHTML += serie
+         ul.innerHTML += serie
        }
        }
       })
