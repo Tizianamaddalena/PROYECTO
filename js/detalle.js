@@ -123,6 +123,11 @@ window.addEventListener('load',function(){
         <h3>Opiniones de otros usuarios</h3>
         <p> "${contenido}"</p>
         <p>Por ${autor}</p>
+        <form>
+        <label id="comentario_1"> ¡Dejá tu comentario! </label>
+          <textarea id="primer_comentario"></textarea>
+          <button type="button" name="button" id="but_comment">Enviar</button>
+        </form>
         `
         }
       }
@@ -155,6 +160,7 @@ $(document).ready(function(){
 
         /*Pongo comentario en pagina*/
         document.querySelector("#reviews").innerHTML =`
+        <h3>Opiniones de usuarios</h3>
         <p>${coment}</p>
         <form>
         <label id="comentario_1"> ¡Dejá tu comentario! </label>
@@ -163,41 +169,16 @@ $(document).ready(function(){
         </form>
         `
         /*Limpiando los campos o inputs*/
-        document.getElementById("primer_comentario").value = "";        
+        document.getElementById("primer_comentario").value = "";
 
     });
 });
 
-/*Funcion Cargar y Mostrar datos*/
-$(document).ready(function(){
-    $('#but_comment').click(function(){
-        /*Obtener datos almacenados*/
-        var nombre = localStorage.getItem("primer_comentario");
 
-        /*Mostrar datos almacenados*/
-        document.getElementById("primer_comentario").innerHTML = nombre;
-
-    });
-});
 /////////////////////////////////////////////////////////////////////
 
 
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     })
 
     // FUNCION DE RECOMENDACION

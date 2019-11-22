@@ -1,4 +1,4 @@
-var but = document.querySelector("#perfil")
+var but = document.querySelector("#perfil") // #perfil-->boton
 
   but.onclick= function (){
   alert("¡Se ha iniciado sesión con éxito!")
@@ -10,7 +10,7 @@ var but = document.querySelector("#perfil")
 $(document).ready(function(){
     $('#perfil').click(function(){
         /*Captura de datos escrito en los inputs*/
-        var coment = document.getElementById("Nom").value;
+        var coment = document.getElementById("Nom").value;//nom --> id input
         var em = document.getElementById("email").value;
 
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
         /*Guardando los datos en el LocalStorage*/
-        localStorage.setItem("Nom", coment);
+        localStorage.setItem("Nom", coment); //coment --> variable
         localStorage.setItem("email", em);
 
 
@@ -51,7 +51,7 @@ $(document).ready(function(){
         /*Mostrar datos almacenados*/
         document.getElementById("Nom").innerHTML = nombre;
         document.getElementById("email").innerHTML = em;
-    
+
 
 
 
