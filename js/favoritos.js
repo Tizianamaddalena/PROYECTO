@@ -23,7 +23,7 @@ if (recuperacionStorage == null) {
         //lo saco
         var index = seriesFavoritas.indexOf(id);
         seriesFavoritas.splice(index,1);
-        document.querySelector("#favoritos").innerHTML= "Agregar a favoritos" }
+        document.querySelector("#favoritos").innerHTML= "Agregar a favoritos ❤" }
          else {
           //lo agrego
           seriesFavoritas.push(id);
