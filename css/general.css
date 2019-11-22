@@ -1,6 +1,7 @@
 *{box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 main {
@@ -21,10 +22,9 @@ body {
 
 li {
   list-style: none;
-   font-family: 'Fjalla One', sans-serif;
 }
+
 #toptop {
-   font-family: 'Fjalla One', sans-serif;
    text-decoration: none;
    background-color: black;
    color: #dc3545;
@@ -71,7 +71,7 @@ footer {
     border: solid 2px #dc3545;
     padding: 2px;
    }
- #toptop {    font-family: 'Fjalla One', sans-serif;
+ #toptop {
     text-decoration: none;
     background-color: #dc3545 ;
     color: white;
@@ -92,7 +92,6 @@ footer {
       }
 
       .descripcion , .titulo{
-          font-family: 'Fjalla One', sans-serif;
           color: black;
           font-size: 15px;
           align-self: center;
@@ -200,7 +199,7 @@ footer {
     font-size: 14px;
 
    }
-   #toptop {    font-family: 'Fjalla One', sans-serif;
+   #toptop {    
       text-decoration: none;
       background-color: #dc3545 ;
       color:  rgb(226, 238, 113);

@@ -19,12 +19,10 @@ list-style: none;
   width: 180px;
   padding: 5px;
   font-size: 12px;
-  font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
 }
 
 .boton {
-  font-family: 'Fjalla One', sans-serif;
   background-color: rgba(204, 67, 140, 0);
   padding: 5px;
   color: #dc3545;
@@ -43,7 +41,6 @@ list-style: none;
 .opciones {
   color: #dc3545;
   text-decoration: none;
-  font-family: 'Fjalla One', sans-serif;
   font-size: 35px;
   border: solid 2px rgba(255, 255, 255, 0);
   padding: 3px;
