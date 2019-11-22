@@ -16,15 +16,19 @@ $(document).ready(function(){
 
 
 
+
         /*Guardando los datos en el LocalStorage*/
         localStorage.setItem("Nom", coment);
-        localStorage.setItem("email", coment);
+        localStorage.setItem("email", em);
+
 
 
 
         /*Limpiando los campos o inputs*/
         document.getElementById("Nom").value = "";
         document.getElementById("email").value = "";
+
+
 
 
 
@@ -42,10 +46,14 @@ $(document).ready(function(){
 
 
 
+
+
         /*Mostrar datos almacenados*/
         document.getElementById("Nom").innerHTML = nombre;
         document.getElementById("email").innerHTML = em;
-        
+    
+
+
 
 
 
