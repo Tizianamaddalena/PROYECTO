@@ -133,7 +133,6 @@ window.addEventListener('load',function(){
         <label id="comentario_1"> ¡Sé el primero en dejar un comentario! </label>
           <textarea id="primer_comentario"></textarea>
           <button type="button" name="button" id="but_comment">Enviar</button>
-
         </form>
         `
         var coment = document.querySelector("#primer_comentario")
@@ -153,8 +152,18 @@ $(document).ready(function(){
 
         /*Guardando los datos en el LocalStorage*/
         localStorage.setItem("primer_comentario", coment);
+
+        /*Pongo comentario en pagina*/
+        document.querySelector("#reviews").innerHTML =`
+        <p>${coment}</p>
+        <form>
+        <label id="comentario_1"> ¡Dejá tu comentario! </label>
+          <textarea id="primer_comentario"></textarea>
+          <button type="button" name="button" id="but_comment">Enviar</button>
+        </form>
+        `
         /*Limpiando los campos o inputs*/
-        document.getElementById("primer_comentario").value = "";
+        document.getElementById("primer_comentario").value = "";        
 
     });
 });
