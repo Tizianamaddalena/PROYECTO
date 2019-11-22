@@ -16,6 +16,11 @@ footer {
   margin: 20px;
 }
 
+ h1 {
+   font-family: 'Fjalla One', sans-serif;
+   color: #dc3545;
+ }
+
 .footer-hipervinculo {
   color: #dc3545;
   font-size: 20px;

@@ -54,6 +54,7 @@ window.addEventListener('load',function(){
      fechaEstrenoTemp = temporadas[i].air_date
      cantEpisodios = temporadas[i].episode_count
     console.log(listaTemporadas);
+    
     temporadasSerie.innerHTML += `<li><a class="uk-accordion-title nombreTemp" href="#"> ${listaTemporadas}</a>
     <div class="uk-accordion-content">
     <p class="infoTemp">Fecha de estreno: ${fechaEstrenoTemp}</p>

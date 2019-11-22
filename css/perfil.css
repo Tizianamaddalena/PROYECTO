@@ -1,6 +1,5 @@
 .iniciar_sesion label {
   color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
   padding: 5px;
   display: block;
 }
@@ -11,7 +10,6 @@ main {
 
 input{
   border-radius: 10px;
-  font-family: 'Fjalla One', sans-serif;
   width: 30%;
   margin-bottom: 20px;
   padding: 5px;
@@ -24,7 +22,6 @@ input{
   border: outset 2px rgba(139, 137, 90, 0);
   font-size: 20px;
   text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
   }
 
 .enviar:hover {

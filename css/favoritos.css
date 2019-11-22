@@ -2,7 +2,6 @@ main {
 height: auto;
   }
 .favoritos {
-  font-family: 'Fjalla One', sans-serif;
   font-size: 30px;
   color: #dc3545 ;
 }
@@ -13,4 +12,9 @@ height: auto;
 
 .fav1 a{
   flex-wrap: wrap;
+}
+
+h3 {
+  font-family: 'Fjalla One',sans-serif;
+
 }

@@ -5,13 +5,11 @@ main {
   font-size: 20px;
   color: white;
   text-transform: capitalize;
-  font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
 }
 #titulo-genero{
   font-size: 30px;
   color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
 }
 

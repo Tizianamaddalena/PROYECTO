@@ -17,6 +17,7 @@ main {
 .uk-section h2 {
   color: white;
   font-size: 30px;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .uk-container p,
@@ -41,6 +42,9 @@ main {
   justify-content: space-around;
 }
 
+.recomm img{
+  cursor: pointer;
+}
 .uk-container button {
   color:#dc3545 ;
   background-color: black;
@@ -85,11 +89,6 @@ button:hover {
   max-width: none;
 }  /* para que no achique el poster de la serie */
 
-#reviews h3 {
-  color: white;
-  padding: 0 10px;
-}
-
 #masinfo {
   display: flex;
   justify-content: space-between;
@@ -118,6 +117,8 @@ button:hover {
   text-align: center;
   color: #dc3545;
   text-decoration: underline;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 0 10px;
 }
 
 #primer_comentario {
@@ -146,7 +147,9 @@ button:hover {
 .temp {
   color: white;
   font-size: 25px;
-  border: outset 3px white
+  border: outset 3px white;
+  font-family: 'Fjalla One',sans-serif;
+  padding: 5px;
 }
 
 .infoTemp {
@@ -156,6 +159,7 @@ button:hover {
 .nombreTemp {
   font-size: 20px;
   background-color: #dc3545;
+  padding: 3px;
 }
 
 .nombreTemp:hover {

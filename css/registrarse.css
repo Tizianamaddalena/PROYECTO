@@ -2,7 +2,6 @@
 #registrarse input,
 #registrarse legend{
   color: #dc3545;
-  font-family: 'Fjalla One', sans-serif;
   padding: 5px;
 }
 
@@ -13,7 +12,6 @@
   border: outset 2px rgba(139, 137, 90, 0);
   font-size: 20px;
   text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
   }
 
 .enviar:hover {
@@ -25,12 +23,13 @@
 #registrarse input,
 #registrarse select{
   border-radius: 10px;
-  font-family: 'Fjalla One', sans-serif;
   width: 30%;
   margin-bottom: 20px;
 }
 
-
+#registrarse select {
+  font-size: 15px;
+}
 main{
   text-align: center;
 }
