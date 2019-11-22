@@ -10,12 +10,24 @@ var but = document.querySelector("#perfil")
 $(document).ready(function(){
     $('#perfil').click(function(){
         /*Captura de datos escrito en los inputs*/
-        var coment = document.getElementById("primer_comentario").value;
+        var coment = document.getElementById("Nom").value;
+        var em = document.getElementById("email").value;
+
+
+
 
         /*Guardando los datos en el LocalStorage*/
-        localStorage.setItem("primer_comentario", coment);
+        localStorage.setItem("Nom", coment);
+        localStorage.setItem("email", coment);
+
+
+
         /*Limpiando los campos o inputs*/
-        document.getElementById("primer_comentario").value = "";
+        document.getElementById("Nom").value = "";
+        document.getElementById("email").value = "";
+
+
+
 
     });
 });
@@ -24,10 +36,18 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#perfil').click(function(){
         /*Obtener datos almacenados*/
-        var nombre = localStorage.getItem("primer_comentario");
+        var nombre = localStorage.getItem("Nom");
+        var em = localStorage.getItem("email");
+
+
+
 
         /*Mostrar datos almacenados*/
-        document.getElementById("primer_comentario").innerHTML = nombre;
+        document.getElementById("Nom").innerHTML = nombre;
+        document.getElementById("email").innerHTML = em;
+        
+
+
 
     });
 });
