@@ -39,8 +39,7 @@ window.addEventListener('load',function(){
           <p>${descripcion}</p>
         </section>
         </div>
-
-        `
+    `
         // FUNCION TEMPORADAS
 
     var temporadasSerie = document.querySelector(".temporadas");

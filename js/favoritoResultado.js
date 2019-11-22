@@ -15,28 +15,30 @@ window.onload= function () {
        return response.json()
       })
 
+
       .then(function(information) {
           console.log(information);
-         var detalleSerie = document.querySelector("#favs");
-         var resultados = information.results;
-         if (resultados.length > 0) {
-          for (var i = 0;i < information.results.length; i++){
-        var titulo = resultados[i].name
-         var posterURL =  "https://image.tmdb.org/t/p/original" + resultados[i].poster_path
+         var favorita = document.querySelector("#favs");
+         var urlImg =  "https://image.tmdb.org/t/p/original" + information.poster_path;
+         var titulo = information.name
+         var id =  information.id
+         var descripcion = information.overview;
 
+         favorita.innerHTML += `
+            <h2>${titulo}</h2>
+            <div id="foto_info">
+            <section class="info_serie">
+              <a href="detalle.html?id=${id}">
+              <img src="${urlImg}" width="250">
+            </section>
+            <section class="info_serie">
+              <p>${descripcion}</p>
+            </section>
+            </div>
+              `
 
+            })
 
-
-         serie = '<li class="fav1" tabindex="0" >'
-         serie += '<a href="detalle.html?id=' + seriesFavoritas + '">'
-         serie +=   '<img src="'+posterURL+'" alt="" width=300px>'
-         serie +=   '<div"><h2 class=""></h2></div>'
-         serie += '</a>'
-         serie += '</li>'
-         ul.innerHTML += serie
-       }
-       }
-      })
 
       .catch(function(error) {
        console.log("Error: " + error);
