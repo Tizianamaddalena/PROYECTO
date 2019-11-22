@@ -79,10 +79,11 @@ window.addEventListener('load',function(){
      return response.json()
     })
     .then(function(information) {
-      console.log(information.results);
-      var contTrailer = document.querySelector("#trailers");
+      console.log("=======");
+      console.log(information.results[i]);
 
-      if (information.results > 0) {
+      if (information.results.length > 0) {
+      var contTrailer = document.querySelector("#trailers");
 
       for (var i = 0; i < information.results.length; i++) {
 
@@ -92,9 +93,13 @@ window.addEventListener('load',function(){
       contTrailer.innerHTML += `
         <section id="videoTrailer">${iframe}</section>
       `
-    }  } else {
-      contTrailer.innerHTML += `<p id="sin_trailer">Este trailer no esta disponible</p>`
     }
+  } else {
+    var contTrailer = document.querySelector("#trailers")
+    contTrailer.innerHTML += `
+    <p id="sin_trailer">Este trailer no se encuentra disponible</p>
+    `
+  }
     })
 
     .catch(function(error) {
