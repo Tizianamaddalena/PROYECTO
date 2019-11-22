@@ -54,10 +54,10 @@ window.addEventListener('load',function(){
      fechaEstrenoTemp = temporadas[i].air_date
      cantEpisodios = temporadas[i].episode_count
     console.log(listaTemporadas);
-    temporadasSerie.innerHTML += `<li><a class="uk-accordion-title" href="#"> ${listaTemporadas}</a>
+    temporadasSerie.innerHTML += `<li><a class="uk-accordion-title nombreTemp" href="#"> ${listaTemporadas}</a>
     <div class="uk-accordion-content">
-    <p>Fecha de estreno: ${fechaEstrenoTemp}</p>
-    <p>Cantidad de episodios: ${cantEpisodios}</p>
+    <p class="infoTemp">Fecha de estreno: ${fechaEstrenoTemp}</p>
+    <p class="infoTemp">Cantidad de episodios: ${cantEpisodios}</p>
     </div>
     </li>
     `
@@ -80,7 +80,7 @@ window.addEventListener('load',function(){
     .then(function(information) {
       console.log("=======");
       console.log(information.results[i]);
-      var contTrailer = document.querySelector("#trailer");
+      var contTrailer = document.querySelector("#trailers");
 
       for (var i = 0; i < information.results.length; i++) {
 
@@ -88,14 +88,7 @@ window.addEventListener('load',function(){
       var urlVideo = 'https://www.youtube.com/watch?v=' + information.results[i].key;
 
       contTrailer.innerHTML += `
-      <div uk-slider= "autoplay: true" class="uk-position-relative uk-visible-toggle uk-light" id="contenedor-carrusel-1" tabindex="-1" uk-slider>
-      <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m" id="trailers">
         <section id="videoTrailer">${iframe}</section>
-      </ul>
-      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-      </div>
-
       `
       }
     })
@@ -195,7 +188,6 @@ window.addEventListener('load',function(){
       console.log("Error: " + error);
      })
 
-//FUNCION DE FAVORITOS
 
 
 
