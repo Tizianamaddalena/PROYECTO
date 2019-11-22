@@ -80,8 +80,7 @@ window.addEventListener('load',function(){
     })
     .then(function(information) {
       console.log("=======");
-      console.log(information.results[i]);
-
+      
       if (information.results.length > 0) {
       var contTrailer = document.querySelector("#trailers");
 
