@@ -8,7 +8,7 @@ window.onload= function () {
 
 
     for (var i = 0; i < seriesFavoritas.length; i++) {
-      fetch("https://api.themoviedb.org/3/tv/" + seriesFavoritas + "?api_key="+api_key)
+      fetch("https://api.themoviedb.org/3/tv/" + seriesFavoritas[i] + "?api_key="+api_key)
 
 
       .then(function(response) {
@@ -44,7 +44,6 @@ window.onload= function () {
        console.log("Error: " + error);
       })
     }
-
 
 
 
