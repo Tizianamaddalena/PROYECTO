@@ -18,8 +18,13 @@ window.onload= function () {
       .then(function(information) {
           console.log(information);
          var detalleSerie = document.querySelector("#favs");
-         var posterURL =  "https://image.tmdb.org/t/p/original" + information.poster_path;
-         var titulo = information.name
+
+         if (information.length > 0) {
+          for (var i = 0;i < information.results.length; i++){
+
+        var titulo = information[i].name
+         var posterURL =  "https://image.tmdb.org/t/p/original" + information[i].poster_path
+
 
 
 
@@ -30,7 +35,8 @@ window.onload= function () {
          serie += '</a>'
          serie += '</li>'
          detalleSerie.innerHTML += serie
-
+       }
+       }
       })
 
       .catch(function(error) {
