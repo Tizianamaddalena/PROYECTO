@@ -21,11 +21,12 @@ window.onload= function () {
          var posterURL =  "https://image.tmdb.org/t/p/original" + information.poster_path;
          var titulo = information.name
 
-        
+
+
          serie = '<li  class="uk-animation-toggle" tabindex="0" >'
          serie += '<a href="detalle.html?id=' + seriesFavoritas + '">'
-         serie +=   '<img class="uk-animation-fade" src="'+posterURL+'" alt="">'
-         serie +=   '<div class="uk-position-center uk-panel"><h2 class="">'+'</h2></div>'
+         serie +=   '<img class="uk-animation-fade" src="'+posterURL+'" alt="" width=300px>'
+         serie +=   '<div class="uk-position-center uk-panel"><h2 class=""></h2></div>'
          serie += '</a>'
          serie += '</li>'
          detalleSerie.innerHTML += serie
