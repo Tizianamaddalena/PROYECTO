@@ -2,11 +2,12 @@ window.onload= function () {
   var recuperacionStorage = localStorage.getItem("seriesFavoritas");
   var api_key = "60be6317b0012697cb25d6ce427de920"
 
+
     var seriesFavoritas = JSON.parse (recuperacionStorage);
     console.log(seriesFavoritas);
 
     for (var i = 0; i < seriesFavoritas.length; i++) {
-      fetch("https://api.themoviedb.org/3/tv/" + i + "?api_key="+api_key)
+      fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key="+api_key)
 
 
       .then(function(response) {
