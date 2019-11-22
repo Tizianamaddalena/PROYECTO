@@ -8,14 +8,14 @@ main {
   text-align: center;
 }
 
-input{
+.iniciar_sesion input{
   border-radius: 10px;
   width: 30%;
   margin-bottom: 20px;
   padding: 5px;
 }
 
-.enviar {
+.iniciar_sesion .enviar {
   background-color: rgba(204, 67, 140, 0);
   padding: 5px;
   color: white;
@@ -24,7 +24,7 @@ input{
   text-transform: uppercase;
   }
 
-.enviar:hover {
+.iniciar_sesion .enviar:hover {
     cursor: pointer;
     border: outset 2px #dc3545;
     padding: 5px;

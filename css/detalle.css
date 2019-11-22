@@ -121,6 +121,10 @@ button:hover {
   padding: 0 10px;
 }
 
+#reviews form {
+  margin-top:10px;
+}
+
 #primer_comentario {
   width: 100%;
   padding: 5px;
@@ -144,17 +148,15 @@ button:hover {
   width: 50%;
   height: 100%;
 }
+
 .temp {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   border: outset 3px white;
   font-family: 'Fjalla One',sans-serif;
   padding: 5px;
 }
 
-.infoTemp {
-  font-size: 10px;
-}
 
 .nombreTemp {
   font-size: 20px;
@@ -164,4 +166,9 @@ button:hover {
 
 .nombreTemp:hover {
   background-color: black;
+}
+
+#sin_trailer {
+  width: 100%;
+  color: rgb(104, 105, 100);
 }

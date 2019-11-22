@@ -79,9 +79,10 @@ window.addEventListener('load',function(){
      return response.json()
     })
     .then(function(information) {
-      console.log("=======");
-      console.log(information.results[i]);
+      console.log(information.results);
       var contTrailer = document.querySelector("#trailers");
+
+      if (information.results > 0) {
 
       for (var i = 0; i < information.results.length; i++) {
 
@@ -91,7 +92,9 @@ window.addEventListener('load',function(){
       contTrailer.innerHTML += `
         <section id="videoTrailer">${iframe}</section>
       `
-      }
+    }  } else {
+      contTrailer.innerHTML += `<p id="sin_trailer">Este trailer no esta disponible</p>`
+    }
     })
 
     .catch(function(error) {
@@ -120,14 +123,10 @@ window.addEventListener('load',function(){
         var contenido = respuesta.results[i].content
         var autor = respuesta.results[i].author
         comentarios.innerHTML += `
-        <h3>Opiniones de otros usuarios</h3>
-        <p> "${contenido}"</p>
-        <p>Por ${autor}</p>
-        <form>
-        <label id="comentario_1"> ¡Dejá tu comentario! </label>
-          <textarea id="primer_comentario"></textarea>
-          <button type="button" name="button" id="but_comment">Enviar</button>
-        </form>
+            <h3>Opiniones de otros usuarios</h3>
+              <p> "${contenido}"</p>
+              <p>Por ${autor}</p>
+
         `
         }
       }
@@ -160,13 +159,13 @@ $(document).ready(function(){
 
         /*Pongo comentario en pagina*/
         document.querySelector("#reviews").innerHTML =`
-        <h3>Opiniones de usuarios</h3>
-        <p>${coment}</p>
         <form>
         <label id="comentario_1"> ¡Dejá tu comentario! </label>
           <textarea id="primer_comentario"></textarea>
           <button type="button" name="button" id="but_comment">Enviar</button>
         </form>
+        <h3>Opiniones de usuarios</h3>
+        <p>${coment}</p>
         `
         /*Limpiando los campos o inputs*/
         document.getElementById("primer_comentario").value = "";
