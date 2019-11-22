@@ -6,14 +6,15 @@ window.onload= function () {
     console.log(seriesFavoritas);
 
     for (var i = 0; i < seriesFavoritas.length; i++) {
-      .fetch("https://api.themoviedb.org/3/tv/" + i + "?api_key="+api_key)
+      fetch("https://api.themoviedb.org/3/tv/" + i + "?api_key="+api_key)
+
       .then(function(response) {
        return response.json()
       })
 
       .then(function(information) {
           console.log(information);
-         var detalleSerie = document.querySelector("#detalle-serie");
+         var detalleSerie = document.querySelector("#favs");
          var urlImg =  "https://image.tmdb.org/t/p/original" + information.poster_path;
          var titulo = information.name
          var descripcion = information.overview;
@@ -22,20 +23,20 @@ window.onload= function () {
          var genero= information.genres
          var listaGenero = ""
 
-    
+
          detalleSerie.innerHTML = `
             <h2>${titulo}</h2>
             <div id="foto_info">
             <section class="info_serie">
               <img src="${urlImg}" width="250">
             </section>
-            <section class="info_serie">
+            <!-- <section class="info_serie">
               <p>Lenguaje original: ${lenguaje} </p>
               <p>Fecha de estreno: ${fechaEstreno} </p>
               <p>Género: ${listaGenero}</p>
 
               <p>${descripcion}</p>
-            </section>
+            </section> -->
             </div>
 
             `
