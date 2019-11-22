@@ -18,12 +18,11 @@ window.onload= function () {
       .then(function(information) {
           console.log(information);
          var detalleSerie = document.querySelector("#favs");
-
-         if (information.length > 0) {
+         var resultados = information.results;
+         if (resultados.length > 0) {
           for (var i = 0;i < information.results.length; i++){
-
-        var titulo = information[i].name
-         var posterURL =  "https://image.tmdb.org/t/p/original" + information[i].poster_path
+        var titulo = resultados[i].name
+         var posterURL =  "https://image.tmdb.org/t/p/original" + resultados[i].poster_path
 
 
 
